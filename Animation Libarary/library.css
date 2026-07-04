@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    height: 1000vh;
+    background-image: url(https://michalsnik.github.io/aos/img/bg.jpg);
+    background-attachment: fixed;
+}
+.wrapper{
+    width: 100%;
+    height: 1000vh;
+    background-color: rgba(56, 34, 145, 0.7);
+}
+.mainpage{
+    /* background-color: rgb(246, 193, 193); */
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.robo{
+    width: 14vw;
+    height: 22vh;
+    padding: 8px;
+    background-image: url(https://michalsnik.github.io/aos/img/github_octocat.png);
+    background-repeat: no-repeat;
+
+    /* border: 2px solid black; */
+    background-size: 12vw 18vh;
+    position: absolute;
+    right: 0;
+    top: 2rem;
+}
+.page1content{
+    /* border: 2px solid black; */
+    width: 30vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: absolute;
+    top: 15rem;
+    left: 29rem;
+    /* padding: 12px; */
+    justify-content: center;
+    align-items: center;
+}
+.page1content i{
+    width: 13vw;
+    height: 8vh;
+}
+.page1content h1{
+    font-size: 82px;
+}
+.page1content h3{
+    font-size: 33px;
+}
+.page2cont{
+    color: white;
+    width: 100%;
+    height: 12vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 43px;
+    text-align: center;
+    border: 3px solid gray;
+}
+.page2box{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    /* background-color: red; */
+}
+.pg2box1{
+    width: 29vw;
+    height: 34vh;
+    border: 8px solid white;
+    background-color: black;
+}
+.boxes{
+    /* border: 2px solid black; */
+    width: 50%;
+    padding-top: 4rem;
+    padding-left: 5rem;
+}
+.boxes2{
+    /* border: 2px solid black; */
+    width: 50%;
+    padding-top: 19rem;
+    padding-left: 11rem;
+}
+.pg2box2{
+    width: 29vw;
+    height: 34vh;
+    border: 8px solid white;
+    background-color: black;
+    /* position: absolute;
+    right: 5rem;
+    bottom: 4rem; */
+}
+.child1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 55px;
+    font-size: 38px;
+}
+.child1.aos-animate{
+    animation: Fade1 1.5s ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes Fade1{
+    0%{
+        opacity: 0;
+        transform: translateY(7rem);       
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(-1rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+.child2{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 55px;
+    font-size: 38px;
+}
+.child2.aos-animate{
+    animation: Fade2 1.5s ease-out;
+}
+@keyframes Fade2{
+    0%{
+        opacity: 0;
+        transform: translateY(-7rem);       
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(1.5rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+.child3{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 55px;
+    font-size: 38px;
+}
+.child3.aos-animate{
+    animation: Fade3 1.5s ease-out;
+}
+@keyframes Fade3{
+    0%{
+        opacity: 0;
+        transform: translateX(-7rem);       
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
