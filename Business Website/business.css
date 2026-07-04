@@ -1,0 +1,159 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    box-sizing: border-box;
+
+    font-size: 22px;
+}
+.section{
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://i.pinimg.com/736x/56/60/44/566044adffbe9276b1dd94783e0ae04f.jpg);
+
+}
+.maindiv{
+
+   display: flex;
+   justify-content: end;
+   width: 95%;
+   /* margin-bottom: 1rem; */
+    
+}
+.box{
+    width: 20vw;
+    height: 60vh;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+}
+ .maindiv h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+.maindiv p{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.maindiv button{
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 10px 25px;
+    box-sizing: border-box;
+
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+    padding: 1rem;
+    padding-bottom: 2rem;
+
+    
+}
+.box1{
+    gap: 5px;
+    width: 28%;
+    height: 220px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+   
+    font-size: 30px;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    
+
+}
+ .box1 p{
+    font-size: 17px;
+    justify-content: center;
+    padding-left: 8px;
+    padding-top: 5px;
+    
+    
+}
+.box1 h4{
+    margin-top: 20px;
+    margin-left: 45px;
+} 
+.secdiv{
+    /* border: 8px solid red; */
+    display: flex;
+    flex-direction: row;
+    /* background-color: rgb(207, 247, 247); */
+
+}
+
+.page2content{
+    font-size: 1rem;
+    /* border: 2px solid black; */
+    margin-left: 30px;
+    justify-content: center;
+    width: 40vw;
+    margin-top: 25px;
+    margin-left: 63px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.page2content h2{
+    display:list-item;
+    justify-content: center;
+    font-size: 22px;
+    
+} 
+.page2content h1{
+    font-size: 50px;
+}
+.page2content p{
+    margin-left: 35px;
+}
+.page2pic{
+    width: 60vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding-top: 35px;
+    padding-left: 200px;
+
+}
+.page2pic1{
+    width: 15vw;
+    height: 66vh;
+    background-image: url(https://img.magnific.com/free-photo/business-people-shaking-hands-together_53876-13391.jpg?semt=ais_hybrid&w=740&q=80);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.page2pic2{
+    width: 15vw;
+    height: 66vh;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR78tQKEHIutEwZ_Iw_FpV4r9PkRQiLZzVvlajM3L5N2g&s=10);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
