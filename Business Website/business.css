@@ -155,7 +155,7 @@
 }
 .page3{
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     margin-top: 40px;
 }
 .pg3maindiv{
@@ -224,5 +224,49 @@
     margin-top: 29px;
 
 }
-
+.page4{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pg4content{
+    width: 40%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 9px;
+    margin-top: 22px;
+    margin-left: 40px;
+}
+.pg4content h5{
+    color: red;
+    font-size: 22px;
+}
+.pg4content h1{
+    font-size: 55px;
+}
+.pg4content p{
+    font-size: 17px;
+}
+.pg4content button{
+    width: 12vw;
+    height: 8vh;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+.pg4pic{
+    width: 40vw;
+    height: 60vh;
+    background-image: url(https://i.pinimg.com/1200x/22/19/11/221911e521f752260dfa32c2665c7258.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 35px;
+    margin-right: 68px;
+}
 
