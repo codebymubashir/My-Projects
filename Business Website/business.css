@@ -98,16 +98,13 @@
     margin-left: 45px;
 } 
 .secdiv{
-    /* border: 8px solid red; */
     display: flex;
     flex-direction: row;
-    /* background-color: rgb(207, 247, 247); */
 
 }
 
 .page2content{
     font-size: 1rem;
-    /* border: 2px solid black; */
     margin-left: 30px;
     justify-content: center;
     width: 40vw;
@@ -156,4 +153,76 @@
     background-position: center;
     background-size: cover;
 }
+.page3{
+    width: 100%;
+    height: 90vh;
+    margin-top: 40px;
+}
+.pg3maindiv{
+    width: 100%;
+    height: 35vh;
+    margin-top: 39px;
+    display: flex;
+    flex-direction: row;
+}
+.pg3pic1{
+    width: 25vw;
+    height: 35vh;
+    background-image: url(https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJ1c2luZXNzfGVufDB8fDB8fHww);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pg3pic2{
+    width: 25vw;
+    height: 35vh;
+    background-image: url(https://images.unsplash.com/photo-1556740772-1a741367b93e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxzZWFyY2h8MXx8YnVzaW5lc3N8ZW58MHx8MHx8fDA%3D);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.pg3pic3{
+    width: 25vw;
+    height: 35vh;
+    background-image: url(https://images.unsplash.com/photo-1664575602276-acd073f104c1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YnVzaW5lc3N8ZW58MHx8MHx8fDA%3D);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.pg3pic4{
+    width: 25vw;
+    height: 35vh;
+    background-image: url(https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJ1c2luZXNzfGVufDB8fDB8fHww);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.pg3secdiv{
+    width: 100%;
+    height: 40vh;
+    margin-top: 40px;
+}
+.pg3div{
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    justify-content: center;
+    margin-top: 21px;
+}
+.pg3pic5{
+    width: 10vw;
+    height: 23vh;
+    border-radius: 50%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXY1BKBulPAP4KvECo_VALeGaiu28LpVejs7sFy69jmQ&s=10);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pg3content{
+    width: 35vw;
+    height: 30vh;
+    margin-top: 29px;
+
+}
+
 
