@@ -26,15 +26,12 @@ main{
     padding: 8px;
     background-image: url(https://michalsnik.github.io/aos/img/github_octocat.png);
     background-repeat: no-repeat;
-
-    /* border: 2px solid black; */
     background-size: 12vw 18vh;
     position: absolute;
     right: 0;
     top: 2rem;
 }
 .page1content{
-    /* border: 2px solid black; */
     width: 30vw;
     height: 50vh;
     display: flex;
@@ -43,7 +40,6 @@ main{
     position: absolute;
     top: 11rem;
     left: 29rem;
-    /* padding: 12px; */
     justify-content: center;
     align-items: center;
 }
@@ -68,13 +64,11 @@ main{
     border: 3px solid gray;
 }
 .page2box{
-    /* border: 2px solid black; */
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    /* background-color: red; */
 }
 .pg2box1{
     width: 29vw;
@@ -83,14 +77,13 @@ main{
     background-color: black;
 }
 .boxes{
-    /* border: 2px solid black; */
     width: 50%;
     padding-top: 4rem;
     padding-left: 5rem;
 }
 .boxes2{
-    /* border: 2px solid black; */
-    width: 50%;
+    border: 2px solid black;
+    width: 50vw;
     padding-top: 19rem;
     padding-left: 11rem;
 }
@@ -173,5 +166,17 @@ main{
     100%{
         opacity: 1;
         transform: translateY(0rem);
+    }
+}
+
+
+@media (max-width:768px){
+
+    .page1content{
+        left: 220px;
+        width: 50vw;
+    }
+    .boxes2{
+        padding-left: 6rem;
     }
 }
