@@ -9,11 +9,12 @@ body{
 }
 .header{
     width: 100%;
-     position: fixed;
+    position: fixed;
     background-color: white;
 }
 .nav{
     display: flex;
+    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: space-between;
     /* border: 1px solid black; */
@@ -188,7 +189,7 @@ body{
 .title{
     display:flex;
     flex-direction: row;
-    gap: 89px;
+    gap: 60px;
     justify-content:space-between;
     align-items:center;
     margin-bottom:18px;
@@ -300,21 +301,26 @@ body{
     font-size: 42px;
 }
 .page6{
+    width: 100%;
+    height: 20vh;
+}
+.page6 ul{
     display: flex;
     flex-direction: row;
-    gap: 32px;
-    width: 80vw;
-    height: 22vh;
-    margin-left: 110px;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 43px;
+    padding: 22px;
+    padding-left: 60px;
+    align-items: center;
+    text-align: center;
 }
 .page7{
     width: 75vw;
     height: 40vh;
     margin: auto;
-    /* background-color: red; */
-    /* background-color: red; */
-    /* margin-left: 110px; */
 }
+
 
 
 .page7content h2{
@@ -381,6 +387,7 @@ body{
     gap: 77px;
     margin-left: 130px;
     margin-top: 40px;
+
 }
 .foot2 ul{
     display: flex;
@@ -399,3 +406,150 @@ body{
     gap: 12px;
     margin-left: 10px;
  }
+
+
+
+ @media (max-width:768px){
+    .nav{
+        width: 60%;
+        justify-content: space-between;
+        margin-left: 100px;
+    }
+    .nav ul{
+        display: none;
+    }
+    .maindiv{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .div1{
+        width: 80%;
+        margin-top: 3rem;
+        height: 60vh;
+    }
+    .img1{
+        width: 70%;
+        margin-top: 2rem;
+        margin-right: 3rem;
+    }
+    .page2{
+        height: auto;
+    }
+    .page2maindiv{
+        justify-content: space-between;
+        margin-top: 3px;
+    }
+    .card2{
+        width: 25vw;
+        gap: 3px;
+    }
+    .page3cards{
+        margin-left: 43px;
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+    }
+    .card{
+        width: 200px;
+    }
+    .page4maindiv{
+        margin-left: 20px;
+    }
+    .page4img{
+        width: 30vw;
+        height: 40vh;
+    }
+    .page5{
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .page5maindiv{
+        width: 80%;
+        align-items: center;
+        margin-left: 80px;
+    }
+    .page5maindiv h2{
+        font-size: 55px;
+    }
+    .page6{
+        width: 50vw;
+       flex-direction: column;
+    }
+    .pg6pic{
+        width:15vw;
+    }
+    .page7{
+        margin-left: 20px;
+    }
+    .page7content h2{
+        width: 80vw;
+        margin-left: 20px;
+    }
+    .mubashir{
+        margin-left: 90px;
+    }
+    .footmain{
+        width: 100%;
+        padding-left: 20px;
+    }
+    .foot2{
+        font-size: 12px;
+    }
+    .foot2main{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        margin-left: 30px;
+    }
+    .foot5{
+        margin-left: 1px;
+    }
+    .footdiv2{
+        margin-left: 10px;
+    }
+    .foot4{
+        margin-left: 10px;
+        width: 20vw;
+    }
+}
+
+
+/* @media (min-width:425px){
+    
+    
+    .nav{
+        display: flex;
+        flex-direction: column;
+        height: 110px;
+        margin-left: 20px;
+    }
+    .nav h1{
+        font-size: 90px;
+    }
+    .maindiv{
+        height: auto;
+        display: flex;
+        width: 200vw;
+        flex-direction: column;
+        gap: 22rem;
+        border: 2px solid black;
+    }
+    .div1{
+        width: 140vw;
+        height: 110vh;
+        margin-top: 10rem;
+        margin-left: 0rem;
+    
+    }
+    .div1 h1{
+        font-size: 4rem;
+
+    }
+    .div1 p{
+        font-size: 1.5rem;
+        width: 130vw;
+    }
+} */
