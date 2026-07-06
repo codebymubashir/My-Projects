@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Reviews — Mezbaan</title>
+<meta name="description" content="What guests are saying about Mezbaan restaurant in Bahawalpur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .avatar--1{ background: var(--gold); }
+  .avatar--2{ background: var(--ember-bright); }
+  .avatar--3{ background: var(--olive); }
+  .avatar--4{ background: var(--gold-bright); }
+  .avatar--5{ background: var(--ember); }
+  .avatar--6{ background: #b58a4a; }
+  .rating-summary{
+    display:flex; align-items:center; gap: 28px; flex-wrap: wrap;
+    padding: 36px; border-radius: var(--radius-md);
+    background: var(--ink-2); border: 1px solid var(--line-on-dark);
+    margin-bottom: 64px;
+  }
+  .rating-summary__score{ font-family: var(--font-display); font-size: 3.4rem; color: var(--gold-bright); line-height:1; }
+  .rating-summary__stars{ color: var(--gold-bright); font-size: 1.1rem; letter-spacing: 3px; margin: 8px 0 4px; }
+  .rating-summary__count{ font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted-cream); }
+  .rating-summary__divider{ width:1px; align-self:stretch; background: var(--line-on-dark); }
+  .rating-bars{ flex: 1; min-width: 220px; display:flex; flex-direction: column; gap: 8px; }
+  .rating-bar{ display:flex; align-items:center; gap: 10px; font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted-cream); }
+  .rating-bar__track{ flex:1; height: 6px; border-radius: 999px; background: rgba(244,236,216,0.1); overflow:hidden; }
+  .rating-bar__fill{ height:100%; background: var(--gold); border-radius: 999px; }
+</style>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="nav__brand">Mez<span>baan</span></a>
+    <input type="checkbox" id="nav-toggle" class="nav__toggle">
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="reviews.html" class="is-active">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html#reserve" class="btn btn--solid nav__cta">Reserve a Table</a></li>
+    </ul>
+    <label for="nav-toggle" class="nav__burger" aria-label="Open menu"><span></span></label>
+  </div>
+</nav>
+
+<!-- ===================== PAGE HEADER ===================== -->
+<header class="page-header" style="background-image:url('https://plus.unsplash.com/premium_photo-1695029504689-2b27606c05fe?fm=jpg&q=80&w=1920&auto=format&fit=crop');">
+  <div class="wrap">
+    <p class="eyebrow">Customer Reviews</p>
+    <h1 class="heading-xl">What our <i>guests</i> keep coming back to say.</h1>
+    <p class="lede">No polish, no cherry-picking — just what people leave for us across Google, Facebook, and our guestbook by the door.</p>
+  </div>
+</header>
+
+<!-- ===================== FEATURED QUOTE ===================== -->
+<section class="section section--dark" style="padding-bottom: 40px;">
+  <div class="wrap">
+    <div class="featured-quote">
+      <div class="featured-quote__mark">"</div>
+      <p>Mezbaan is the rare restaurant that feels the same on your first visit as it does on your fiftieth — like a table someone has kept waiting for you.</p>
+      <p class="featured-quote__by">— Hina Farooq, Regular Guest</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== RATING SUMMARY + GRID ===================== -->
+<section class="section section--dark" style="padding-top: 0;">
+  <div class="wrap">
+
+    <div class="rating-summary">
+      <div>
+        <div class="rating-summary__score">4.8</div>
+        <div class="rating-summary__stars">★★★★★</div>
+        <div class="rating-summary__count">Based on 316 reviews</div>
+      </div>
+      <div class="rating-summary__divider"></div>
+      <div class="rating-bars">
+        <div class="rating-bar">5 ★ <div class="rating-bar__track"><div class="rating-bar__fill" style="width:82%"></div></div> 82%</div>
+        <div class="rating-bar">4 ★ <div class="rating-bar__track"><div class="rating-bar__fill" style="width:13%"></div></div> 13%</div>
+        <div class="rating-bar">3 ★ <div class="rating-bar__track"><div class="rating-bar__fill" style="width:3%"></div></div> 3%</div>
+        <div class="rating-bar">2 ★ <div class="rating-bar__track"><div class="rating-bar__fill" style="width:1%"></div></div> 1%</div>
+        <div class="rating-bar">1 ★ <div class="rating-bar__track"><div class="rating-bar__fill" style="width:1%"></div></div> 1%</div>
+      </div>
+    </div>
+
+    <div class="grid grid--3">
+
+      <article class="review-card">
+        <div class="review-card__stars">★★★★★</div>
+        <p class="review-card__quote">"The nihari alone is worth the drive across town. We've tried every version in Bahawalpur — nothing else comes close."</p>
+        <div class="review-card__person">
+          <div class="avatar avatar--1">AK</div>
+          <div><strong>Ahmed Khalid</strong><span>Google Review</span></div>
+        </div>
+      </article>
+
+      <article class="review-card">
+        <div class="review-card__stars">★★★★★</div>
+        <p class="review-card__quote">"Booked a table for twelve on a Friday night and they still remembered my father's usual order from his last visit."</p>
+        <div class="review-card__person">
+          <div class="avatar avatar--2">SR</div>
+          <div><strong>Sana Rafiq</strong><span>Facebook Review</span></div>
+        </div>
+      </article>
+
+      <article class="review-card">
+        <div class="review-card__stars">★★★★★</div>
+        <p class="review-card__quote">"Best biryani in the city, full stop. Ask for it extra spiced and thank me later."</p>
+        <div class="review-card__person">
+          <div class="avatar avatar--3">UM</div>
+          <div><strong>Usman Malik</strong><span>Google Review</span></div>
+        </div>
+      </article>
+
+      <article class="review-card">
+        <div class="review-card__stars">★★★★★</div>
+        <p class="review-card__quote">"Their garlic naan comes out of the tandoor blistered and hot — I've started ordering three just for the table."</p>
+        <div class="review-card__person">
+          <div class="avatar avatar--4">FZ</div>
+          <div><strong>Fatima Zahra</strong><span>Guestbook</span></div>
+        </div>
+      </article>
+
+      <article class="review-card">
+        <div class="review-card__stars">★★★★☆</div>
+        <p class="review-card__quote">"Portions are generous and the karahi is cooked fresh per order, which shows. Service can slow down on weekends, but it's worth the wait."</p>
+        <div class="review-card__person">
+          <div class="avatar avatar--5">BH</div>
+          <div><strong>Bilal Hussain</strong><span>Google Review</span></div>
+        </div>
+      </article>
+
+      <article class="review-card">
+        <div class="review-card__stars">★★★★★</div>
+        <p class="review-card__quote">"Took my visiting cousins here and they've been asking to move to Bahawalpur just for Mezbaan's food ever since."</p>
+        <div class="review-card__person">
+          <div class="avatar avatar--6">MN</div>
+          <div><strong>Mahnoor Naveed</strong><span>Facebook Review</span></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA BAND ===================== -->
+<section class="cta-band" style="background-image:url('https://plus.unsplash.com/premium_photo-1695029505425-32496d18869b?fm=jpg&q=80&w=1600&auto=format&fit=crop');">
+  <div class="wrap">
+    <p class="eyebrow" style="justify-content:center;">Your Turn Next</p>
+    <h2 class="heading-lg">Come find out what everyone's talking about.</h2>
+    <div class="hero__ctas">
+      <a href="contact.html#reserve" class="btn btn--solid">Reserve a Table</a>
+      <a href="menu.html" class="btn btn--ghost">Browse the Menu</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div>
+        <p class="footer__brand">Mez<span>baan</span></p>
+        <p>A home-style kitchen in Bahawalpur serving slow-cooked biryani, tandoor bread, and a warm welcome since 2016.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-7.9h2.66l.4-3.09h-3.06V8.1c0-.9.25-1.5 1.53-1.5h1.64V3.85C15.9 3.76 14.9 3.68 13.7 3.68c-2.37 0-4 1.45-4 4.1v2.23H7v3.09h2.7V21h3.8Z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 8.2a3.8 3.8 0 1 0 0 7.6 3.8 3.8 0 0 0 0-7.6Zm0 6.26a2.46 2.46 0 1 1 0-4.92 2.46 2.46 0 0 1 0 4.92ZM17.5 3h-11A3.5 3.5 0 0 0 3 6.5v11A3.5 3.5 0 0 0 6.5 21h11a3.5 3.5 0 0 0 3.5-3.5v-11A3.5 3.5 0 0 0 17.5 3Zm2.16 14.5a2.16 2.16 0 0 1-2.16 2.16h-11a2.16 2.16 0 0 1-2.16-2.16v-11A2.16 2.16 0 0 1 6.5 4.34h11a2.16 2.16 0 0 1 2.16 2.16v11ZM17.9 6.1a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0Z"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.79 13.5L3 21l4.65-1.19A9 9 0 1 0 12 3Zm0 16.2a7.2 7.2 0 0 1-3.67-1l-.26-.16-2.75.71.74-2.68-.17-.28A7.2 7.2 0 1 1 12 19.2Zm3.94-5.4c-.21-.11-1.27-.63-1.47-.7-.2-.08-.34-.11-.49.1-.14.21-.56.7-.69.85-.13.14-.25.16-.47.05-.21-.1-.9-.33-1.72-1.06-.63-.57-1.06-1.26-1.19-1.47-.12-.21-.01-.32.1-.43.1-.1.21-.25.32-.38.1-.13.14-.21.21-.36.07-.14.03-.27-.02-.38-.05-.11-.49-1.18-.67-1.62-.17-.42-.36-.36-.49-.37h-.42c-.14 0-.38.05-.58.27-.2.21-.76.75-.76 1.82s.78 2.11.89 2.25c.1.14 1.53 2.34 3.71 3.28.52.22.92.36 1.24.46.52.17 1 .14 1.37.09.42-.06 1.27-.52 1.45-1.02.18-.5.18-.93.13-1.02-.06-.1-.2-.15-.42-.26Z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Restaurant</h5>
+        <ul class="footer__links">
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#reserve">Reservations</a></li>
+          <li><a href="menu.html">Catering</a></li>
+          <li><a href="about.html">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Visit</h5>
+        <p style="margin-bottom:8px;">12-C Model Town A, Circular Road, Bahawalpur, Punjab</p>
+        <p>+92 300 1234 567<br>hello@mezbaan.pk</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Mezbaan Restaurant. All rights reserved.</span>
+      <span>Designed &amp; built for The Code Lab Bahawalpur — MERN Stack Program</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

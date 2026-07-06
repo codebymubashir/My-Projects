@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu — Mezbaan</title>
+<meta name="description" content="Explore Mezbaan's full menu — starters, signature mains, tandoor breads, desserts and beverages.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="nav__brand">Mez<span>baan</span></a>
+    <input type="checkbox" id="nav-toggle" class="nav__toggle">
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html" class="is-active">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html#reserve" class="btn btn--solid nav__cta">Reserve a Table</a></li>
+    </ul>
+    <label for="nav-toggle" class="nav__burger" aria-label="Open menu"><span></span></label>
+  </div>
+</nav>
+
+<!-- ===================== PAGE HEADER ===================== -->
+<header class="page-header" style="background-image:url('https://plus.unsplash.com/premium_photo-1695029504256-054d9c0e66e9?fm=jpg&q=80&w=1920&auto=format&fit=crop');">
+  <div class="wrap">
+    <p class="eyebrow">The Menu</p>
+    <h1 class="heading-xl">Cooked to <i>order</i>, served without hurry.</h1>
+    <p class="lede">Six categories, one kitchen. Prices are in PKR and every dish can be made mild, medium, or "Mezbaan hot" on request.</p>
+  </div>
+</header>
+
+<!-- ===================== CHEF'S SPECIALS STRIP ===================== -->
+<section class="section section--dark" style="padding-bottom:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Chef's Specials</p>
+        <h2 class="heading-lg">Start here if it's your first visit</h2>
+      </div>
+    </div>
+    <div class="menu-feature-strip">
+      <article class="dish-card">
+        <div class="dish-card__media">
+          <span class="dish-card__tag">Signature</span>
+          <img src="https://plus.unsplash.com/premium_photo-1695029504689-2b27606c05fe?fm=jpg&q=80&w=900&auto=format&fit=crop" alt="Two shared plates of biryani and curry on a tiled restaurant table">
+        </div>
+        <div class="dish-card__body">
+          <div class="dish-card__row"><h3>Mezbaan Sharing Thali</h3><span class="leader"></span><span class="dish-card__price">Rs 2,400</span></div>
+          <p>Biryani, karahi gosht, dal, raita, and fresh naan — built for two.</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <div class="dish-card__media">
+          <img src="https://plus.unsplash.com/premium_photo-1695029505632-bfdec382ae37?fm=jpg&q=80&w=900&auto=format&fit=crop" alt="Kashmiri pulao rice bowl with almonds, sultanas and lemon">
+        </div>
+        <div class="dish-card__body">
+          <div class="dish-card__row"><h3>Kashmiri Pulao</h3><span class="leader"></span><span class="dish-card__price">Rs 780</span></div>
+          <p>Rose-scented rice, toasted almonds, and sultanas.</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <div class="dish-card__media">
+          <span class="dish-card__tag">Bestseller</span>
+          <img src="https://plus.unsplash.com/premium_photo-1695029502961-f57f307bd0c0?fm=jpg&q=80&w=900&auto=format&fit=crop" alt="Nihari beef curry plate with fork and spoon">
+        </div>
+        <div class="dish-card__body">
+          <div class="dish-card__row"><h3>Nihari Slow-Braise</h3><span class="leader"></span><span class="dish-card__price">Rs 1,050</span></div>
+          <p>Overnight beef shank, finished with ginger and green chilli.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FULL MENU ===================== -->
+<section class="section section--dark">
+  <div class="wrap">
+
+    <div class="menu-category">
+      <div class="menu-category__head">
+        <span class="menu-category__num">01</span>
+        <h2 class="heading-md">Starters</h2>
+        <span class="rule"></span>
+      </div>
+
+      <div class="menu-item">
+        <span class="menu-item__name">Shorba <span class="menu-item__badge">Veg</span></span>
+        <span class="leader"></span>
+        <span class="menu-item__price">Rs 320</span>
+        <span class="menu-item__desc">Spiced lentil broth finished with tempered cumin and coriander.</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item__name">Chapli Kebab Sliders <span class="menu-item__badge menu-item__badge--hot">Hot</span></span>
+        <span class="leader"></span>
+        <span class="menu-item__price">Rs 620</span>
+        <span class="menu-item__desc">Hand-pounded beef patties, tomato, and mint chutney in a soft bun.</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item__name">Dahi Puri Chaat <span class="menu-item__badge">Veg</span></span>
+        <span class="leader"></span>
+        <span class="menu-item__price">Rs 450</span>
+        <span class="menu-item__desc">Crisp semolina shells filled with yoghurt, tamarind, and chickpeas.</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item__name">Tandoori Wings <span class="menu-item__badge menu-item__badge--hot">Hot</span></span>
+        <span class="leader"></span>
+        <span class="menu-item__price">Rs 690</span>
+        <span class="menu-item__desc">Charcoal-roasted chicken wings marinated overnight in yoghurt and chilli.</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item__name">Paneer Tikka <span class="menu-item__badge">Veg</span></span>
+        <span class="leader"></span>
+        <span class="menu-item__price">Rs 580</span>
+        <span class="menu-item__desc">Cottage cheese skewers grilled with peppers and smoked paprika.</span>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <div class="menu-category__head">
+        <span class="menu-category__num">02</span>
+        <h2 class="heading-md">Signature Mains</h2>
+        <span class="rule"></span>
+      </div>
+
+      <div class="menu-item">
+        <span class="menu-item__name">Mezbaan Dum Biryani</span>
+        <span class="leader"></span>
+        <span class="menu-item__price">Rs 950</span>
+        <span class="menu-item__desc">Layered basmati and mutton, sealed and slow-steamed with eleven spices.</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item__name">Nihari Slow-Braise <span class="menu-item__badge menu-item__badge--hot">Hot</span></span>
+        <span class="leader"></span>
+        <span class="menu-item__price">Rs 1,050</span>
+        <span class="menu-item__desc">Beef shank braised through the night, finished with ginger and chilli.</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item__name">Butter Chicken Makhani</span>
+        <span class="leader"></span>
+        <span class="menu-item__price">Rs 890</span>
+        <span class="menu-item__desc">Tandoor-roasted chicken simmered in tomato, butter, and fenugreek.</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item__name">Karahi Gosht <span class="menu-item__badge menu-item__badge--hot">Hot</span></span>
+        <span class="leader"></span>
+        <span class="menu-item__price">Rs 1,150</span>
+        <span class="menu-item__desc">Mutton wok-tossed with tomato, ginger, and green chilli, served sizzling.</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item__name">Grilled Seekh Platter</span>
+        <span class="leader"></span>
+        <span class="menu-item__price">Rs 980</span>
+        <span class="menu-item__desc">Minced beef skewers over charcoal, with mint chutney and salad.</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item__name">Palak Paneer <span class="menu-item__badge">Veg</span></span>
+        <span class="leader"></span>
+        <span class="menu-item__price">Rs 720</span>
+        <span class="menu-item__desc">Cottage cheese simmered in a slow-cooked spinach gravy.</span>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <div class="menu-category__head">
+        <span class="menu-category__num">03</span>
+        <h2 class="heading-md">Breads &amp; Rice</h2>
+        <span class="rule"></span>
+      </div>
+
+      <div class="menu-item">
+        <span class="menu-item__name">Garlic Naan <span class="menu-item__badge">Veg</span></span>
+        <span class="leader"></span>
+        <span class="menu-item__price">Rs 180</span>
+        <span class="menu-item__desc">Baked to order in the tandoor, brushed with garlic butter.</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item__name">Tandoori Roti <span class="menu-item__badge">Veg</span></span>
+        <span class="leader"></span>
+        <span class="menu-item__price">Rs 90</span>
+        <span class="menu-item__desc">Whole-wheat flatbread, charred and puffed over open flame.</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item__name">Roghni Naan <span class="menu-item__badge">Veg</span></span>
+        <span class="leader"></span>
+        <span class="menu-item__price">Rs 210</span>
+        <span class="menu-item__desc">Sesame-topped naan enriched with milk and ghee.</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item__name">Steamed Basmati <span class="menu-item__badge">Veg</span></span>
+        <span class="leader"></span>
+        <span class="menu-item__price">Rs 260</span>
+        <span class="menu-item__desc">Aged basmati, steamed plain to pair with any curry.</span>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <div class="menu-category__head">
+        <span class="menu-category__num">04</span>
+        <h2 class="heading-md">Desserts</h2>
+        <span class="rule"></span>
+      </div>
+
+      <div class="menu-item">
+        <span class="menu-item__name">Gulab Jamun <span class="menu-item__badge">Veg</span></span>
+        <span class="leader"></span>
+        <span class="menu-item__price">Rs 340</span>
+        <span class="menu-item__desc">Milk dumplings soaked in warm cardamom syrup, served two per plate.</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item__name">Gajar Halwa <span class="menu-item__badge">Veg</span></span>
+        <span class="leader"></span>
+        <span class="menu-item__price">Rs 390</span>
+        <span class="menu-item__desc">Slow-cooked carrot pudding with khoya, ghee, and toasted almonds.</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item__name">Kheer <span class="menu-item__badge">Veg</span></span>
+        <span class="leader"></span>
+        <span class="menu-item__price">Rs 320</span>
+        <span class="menu-item__desc">Rice pudding simmered for hours in reduced milk and saffron.</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item__name">Baked Cheesecake <span class="menu-item__badge">Veg</span></span>
+        <span class="leader"></span>
+        <span class="menu-item__price">Rs 450</span>
+        <span class="menu-item__desc">Our one non-traditional indulgence — dense, vanilla, and unapologetic.</span>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <div class="menu-category__head">
+        <span class="menu-category__num">05</span>
+        <h2 class="heading-md">Beverages</h2>
+        <span class="rule"></span>
+      </div>
+
+      <div class="menu-item">
+        <span class="menu-item__name">Kashmiri Chai <span class="menu-item__badge">Veg</span></span>
+        <span class="leader"></span>
+        <span class="menu-item__price">Rs 250</span>
+        <span class="menu-item__desc">Pink tea brewed with cardamom, topped with crushed pistachio.</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item__name">Doodh Patti <span class="menu-item__badge">Veg</span></span>
+        <span class="leader"></span>
+        <span class="menu-item__price">Rs 180</span>
+        <span class="menu-item__desc">Strong milk tea, brewed the way Bahawalpur likes it.</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item__name">Rose Falooda Shake <span class="menu-item__badge">Veg</span></span>
+        <span class="leader"></span>
+        <span class="menu-item__price">Rs 420</span>
+        <span class="menu-item__desc">Vermicelli, basil seeds, and rose syrup layered with milk.</span>
+      </div>
+      <div class="menu-item">
+        <span class="menu-item__name">Fresh Lime Soda <span class="menu-item__badge">Veg</span></span>
+        <span class="leader"></span>
+        <span class="menu-item__price">Rs 220</span>
+        <span class="menu-item__desc">Sparkling, sweet or salted, over crushed ice.</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== CTA BAND ===================== -->
+<section class="cta-band" style="background-image:url('https://plus.unsplash.com/premium_photo-1695029503064-efb05b962169?fm=jpg&q=80&w=1600&auto=format&fit=crop');">
+  <div class="wrap">
+    <p class="eyebrow" style="justify-content:center;">Hungry Already?</p>
+    <h2 class="heading-lg">Bring the table to you, or come find ours.</h2>
+    <div class="hero__ctas">
+      <a href="contact.html#reserve" class="btn btn--solid">Reserve a Table</a>
+      <a href="contact.html" class="btn btn--ghost">Order for Delivery</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div>
+        <p class="footer__brand">Mez<span>baan</span></p>
+        <p>A home-style kitchen in Bahawalpur serving slow-cooked biryani, tandoor bread, and a warm welcome since 2016.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-7.9h2.66l.4-3.09h-3.06V8.1c0-.9.25-1.5 1.53-1.5h1.64V3.85C15.9 3.76 14.9 3.68 13.7 3.68c-2.37 0-4 1.45-4 4.1v2.23H7v3.09h2.7V21h3.8Z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 8.2a3.8 3.8 0 1 0 0 7.6 3.8 3.8 0 0 0 0-7.6Zm0 6.26a2.46 2.46 0 1 1 0-4.92 2.46 2.46 0 0 1 0 4.92ZM17.5 3h-11A3.5 3.5 0 0 0 3 6.5v11A3.5 3.5 0 0 0 6.5 21h11a3.5 3.5 0 0 0 3.5-3.5v-11A3.5 3.5 0 0 0 17.5 3Zm2.16 14.5a2.16 2.16 0 0 1-2.16 2.16h-11a2.16 2.16 0 0 1-2.16-2.16v-11A2.16 2.16 0 0 1 6.5 4.34h11a2.16 2.16 0 0 1 2.16 2.16v11ZM17.9 6.1a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0Z"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.79 13.5L3 21l4.65-1.19A9 9 0 1 0 12 3Zm0 16.2a7.2 7.2 0 0 1-3.67-1l-.26-.16-2.75.71.74-2.68-.17-.28A7.2 7.2 0 1 1 12 19.2Zm3.94-5.4c-.21-.11-1.27-.63-1.47-.7-.2-.08-.34-.11-.49.1-.14.21-.56.7-.69.85-.13.14-.25.16-.47.05-.21-.1-.9-.33-1.72-1.06-.63-.57-1.06-1.26-1.19-1.47-.12-.21-.01-.32.1-.43.1-.1.21-.25.32-.38.1-.13.14-.21.21-.36.07-.14.03-.27-.02-.38-.05-.11-.49-1.18-.67-1.62-.17-.42-.36-.36-.49-.37h-.42c-.14 0-.38.05-.58.27-.2.21-.76.75-.76 1.82s.78 2.11.89 2.25c.1.14 1.53 2.34 3.71 3.28.52.22.92.36 1.24.46.52.17 1 .14 1.37.09.42-.06 1.27-.52 1.45-1.02.18-.5.18-.93.13-1.02-.06-.1-.2-.15-.42-.26Z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Restaurant</h5>
+        <ul class="footer__links">
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#reserve">Reservations</a></li>
+          <li><a href="menu.html">Catering</a></li>
+          <li><a href="about.html">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Visit</h5>
+        <p style="margin-bottom:8px;">12-C Model Town A, Circular Road, Bahawalpur, Punjab</p>
+        <p>+92 300 1234 567<br>hello@mezbaan.pk</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Mezbaan Restaurant. All rights reserved.</span>
+      <span>Designed &amp; built for The Code Lab Bahawalpur — MERN Stack Program</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
