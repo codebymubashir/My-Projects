@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Landing Section</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .heroDark{
+    background-color: #1a1a1a;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #1a1a1a;
+  }
+  .logoDark{
+    color: #f0f0f0;
+  }
+
+  .toggle-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border: 2px solid #1a1a1a;
+    border-radius: 6px;
+    background: transparent;
+    color: #1a1a1a;
+    cursor: pointer;
+  }
+  .tooglebtn{
+    border: 2px solid white;
+    color: white;
+  }
+  .toggle-btndark{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+  }
+
+
+  .badge {
+    background-color: #eeeeee;
+    color: #555555;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    max-width: 700px;
+    margin-bottom: 20px;
+  }
+  .h1darkMode{
+    color: white;
+  }
+
+  p.subtitle {
+    font-size: 1.1rem;
+    max-width: 550px;
+    color: #4d4d4d;
+    margin-bottom: 30px;
+  }
+  .pdarkMode{
+    color: #b3b3b3;
+    
+  }
+
+  .cta-group {
+    display: flex;
+    gap: 16px;
+  }
+
+  .btn-primary {
+    padding: 14px 28px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .btn-primarydark{
+    background-color: #f0f0f0;
+    color: black;
+    border: 2px solid black;
+
+  }
+
+  .btn-secondary {
+    padding: 14px 28px;
+    background-color: transparent;
+    color: #1a1a1a;
+    border: 2px solid #1a1a1a;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .btn-secondarydark{
+    border: 2px solid white;
+    color: white;
+  }
+</style>
+</head>
+<body>
+
+  <section id="hero" class="hero">
+    <div class="navbar">
+      <div id="logo" class="logo">Brandly</div>
+      <button class="toggle-btn" id="toggleBtn">Toggle Theme</button>
+    </div>
+
+    <div class="badge">New — v2.0 Released</div>
+    <h1 id="h1dark">Build faster, ship smarter</h1>
+    <p id="pdark" class="subtitle">
+      A clean starting point for your next idea. No clutter, no bloat, just the essentials to get you moving.
+    </p>
+
+    <div class="cta-group">
+      <button id="btn-primarydarkMode" class="btn-primary">Get Started</button>
+      <button id="btn-secondarydarkMode" class="btn-secondary">Learn More</button>
+    </div>
+  </section>
+
+
+  <script src="dark.js"></script>
+
+
+</body>
+</html>
