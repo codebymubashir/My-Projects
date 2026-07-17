@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="src/ecom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.2.0/css/all.min.css"> -->
+    <title>Document</title>
+</head>
+<body>
+
+  <!-- navbar starts here -->
+
+    <header>
+            <div class="navbar  flex flex-row justify-between items-center  w-full h-15 p-3 md:w-[1100px]">
+                <h1 class="ml11 text-2xl md:text-4xl font-bold">
+                 <span class="text-wrapper">
+                   <span class="line line1"></span>
+                   <a href="ecom.html"><span class="letters">TR<span class="italic">O</span>VE</span></a>
+                 </span>
+                </h1>
+                <ul id="navList" class=" navlist hidden md:flex flex-col md:flex-row gap-4 md:gap-7 absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent p-5 md:p-0 shadow-lg md:shadow-none font-family: 'Montserrat', sans-serif; ">
+                 <li><a href="ecom.html">HOME</a></li>
+                 <li><a href="product.html">PRODUCT</a></li>
+                 <li><a href="cart.html">CART</a></li>
+                 <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+                <div class="navsec">
+                  <button class=""><i class="fa-solid fa-moon " style="color: #78350f;"></i></button>
+              <button class="hidden md:flex border-1 border-black"><a href="/login.html">LOGIN/SIGN UP</a></button>
+                <button id="menuBtn" class="md:hidden ">
+                   <i class="fa-solid fa-bars text-2xl " style="color: #78350f;margin-right: 2rem;"></i>
+                </button>
+
+                </div>
+                <!-- <but
+              <!-- <button class="hidden md:flex border-1 border-black"><a href="/login.html">LOGIN/SIGN UP</a></button>
+                <button id="menuBtn" class="md:hidden ">
+                   <i class="fa-solid fa-bars text-2xl " style="color: #78350f;margin-right: 2rem;"></i>
+                </button> -->
+
+
+            </div>
+    </header>
+
+    <!-- navbar ends here -->
+
+    <!-- main starts here -->
+
+  <section class="max-w-[1240px] mx-auto grid md:grid-cols-2 gap-10 items-center px-8 py-16">
+    <div class="page1">
+      <p class="monospace font-mono text-xs tracking-widest uppercase text-[#A6811A] mb-4">
+        ——Curated Since Day One
+      </p>
+      <h1 class="fruances text-5xl font-bold md:text-6xl leading-none mb-6">
+        A <span class="italic text-[#A6811A]">trove</span> of good things, found for you
+      </h1>
+      <p class="text-[#1B1B2F]/70 text-[14px] leading-relaxed max-w-md mb-8">
+        Fashion, toys, and accessories worth keeping — hand-picked, quietly priced, and dropped at your door. No noise, no filler aisles. Just the good stuff.
+      </p>
+      <div class="flex gap-4">
+        <button class=" bg-[#1B1B2F] text-[#F7F4EC] px-8 py-4 w-36 h-14 font-semibold">Explore The Shop</button>
+        <button class="pg1btn hidden md:block bg-transparent border-3 border-black text-[black] px-8 py-4 font-semibold">Our Story</button>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="page2 flex flex-row gap-9">
+      <div class=" pg2div1 w-32 h-32 flex flex-col justify-center  ">
+        <p class="fruances text-3xl font-bold">1.2K+</p>
+        <p class="worksan">Pieces Curated</p>
+      </div>
+      <div class="w-32 h-32  flex flex-col justify-center  ">
+        <p class="fruances text-3xl font-bold">4.8/5</p>
+        <p class="worksan">Average Rating</p>
+      </div>
+      <div class="hidden md:block w-32 h-32 md:flex flex-col justify-center">
+        <p class="fruances text-3xl font-bold">3</p>
+        <p class="worksan">worlds trop</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="ecom.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background: #F7F4EC;
+}
+/* .nav{
+    width: 100%;
+    height: 14vh;
+    border: 2px solid black;
+    padding: 2rem;
+} */
+.navbar h1{
+    font-weight: bold;
+    margin-left: 22px;
+    margin-top: 12px;
+    font-family: sans-serif;
+    font-style: italic;
+}
+.navlist{
+  /* color: red; */
+  font-size: 15px;
+}
+.ml11 {
+  position: relative;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #78350f; /* amber-900 to match your theme, change if needed */
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 { 
+  top: 0; 
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.letters{
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.navsec{
+  display: flex;
+  /* flex-direction: row; */
+  gap: 20px;
+}
+.fruances{
+  font-family: 'Fraunces', serif;
+  
+}
+.monospace{
+  font-family: 'IBM Plex Mono' ,monospace;
+}
+.page1{
+  padding: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.pg1btn{
+  width: 144px;
+  height: 56px;
+}
+.worksan{
+  font-family: 'Work-sans',sans-serif;
+  font-size: 12px;
+}
+.pg2div1{
+  margin-left: 2rem;
+}
