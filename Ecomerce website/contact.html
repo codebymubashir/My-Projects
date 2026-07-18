@@ -16,7 +16,7 @@
   <title>Document</title>
 </head>
 
-<body>
+<body class="bg-[#f5f0e8] font-body overflow-x-hidden">
   <header>
     <div class="navbar  flex flex-row justify-between items-center  w-full h-15 p-3 md:w-full">
       <h1 class="ml11 text-2xl md:text-4xl font-bold">
@@ -43,11 +43,99 @@
 
     </div>
   </header>
-   
+  <section class="contact-wrap relative top-22 py-24 px-6 md:px-16 overflow-hidden">
+
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="dot-grid"></div>
+
+    <div class="relative z-10 text-center mb-16 reveal">
+      <p class="eyebrow">— LET'S TALK —</p>
+      <h2 class="font-heading font-bold text-gray-900 text-5xl md:text-7xl mb-5 title-underline">Say hello</h2>
+      <p class="hidden md:hidden text-gray-500 max-w-lg mx-auto text-sm md:text-base md:text-center">Whatever's on your mind — a question, an idea, or
+        just a hello — drop it below. A real human reads every message.</p>
+    </div>
+
+    <div class="relative z-10 max-w-6xl mx-auto grid md:grid-cols-5 gap-8">
+
+      <div class="md:col-span-2 flex flex-col gap-4">
+        <div class="info-card reveal reveal-1">
+          <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <p class="info-label">Email us</p>
+            <p class="info-value">hello@trove.com</p>
+          </div>
+        </div>
+
+        <div class="info-card reveal reveal-2">
+          <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <p class="info-label">Call us</p>
+            <p class="info-value">+92 300 1234567</p>
+          </div>
+        </div>
+
+        <div class="info-card reveal reveal-3">
+          <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <p class="info-label">Visit us</p>
+            <p class="info-value">Bahawalpur, Punjab, PK</p>
+          </div>
+        </div>
+
+        <div class="dark-panel reveal reveal-4">
+          <i class="fa-solid fa-quote-left quote-icon"></i>
+          <p class="dark-panel-text">Real replies from a real team — never a bot, never a form left unread.</p>
+          <div class="socials">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <form id="contactForm" class="md:col-span-3 form-card reveal reveal-2" novalidate>
+
+        <div class="field-group">
+          <input class="peer" type="text" id="name" placeholder=" ">
+          <label for="name" class="floating-label"><i class="fa-solid fa-user"></i> Your name</label>
+          <p class="error-msg"><i class="fa-solid fa-circle-exclamation"></i> Required — please tell us your name</p>
+        </div>
+
+        <div class="field-group">
+          <input class="peer" type="email" id="email" placeholder=" ">
+          <label for="email" class="floating-label"><i class="fa-solid fa-envelope"></i> Your email</label>
+          <p class="error-msg"><i class="fa-solid fa-circle-exclamation"></i> Required — we need a way to reply</p>
+        </div>
+
+        <div class="field-group">
+          <textarea class="peer" id="message" rows="4" placeholder=" "></textarea>
+          <label for="message" class="floating-label"><i class="fa-solid fa-message"></i> Message</label>
+          <p class="error-msg"><i class="fa-solid fa-circle-exclamation"></i> Required — let us know what's on your mind
+          </p>
+        </div>
+
+        <button type="submit" class="submit-btn">
+          <span>Send message</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </form>
+
+    </div>
+  </section>
+
+  <div id="toast" class="toast">
+    <span class="toast-icon"><i class="fa-solid fa-check"></i></span>
+    <div>
+      <p class="toast-title">Message sent</p>
+      <p class="toast-sub">Thanks for contacting us — we'll reply soon.</p>
+    </div>
+  </div>
+
   <!-- heaeder ends here -->
 
   <!-- main starts here -->
-
+  <!-- 
   <section class="contactpage relative top-15 w-full h-76 border-3 bg-[#1B1B2F]">
   <div class="main1 absolute inset-0 flex justify-center items-center text-center">
     <div class="main1con w-70 h-56 flex flex-col justify-center text-center items-center md:w-200 md:h-44 md:bg-amber-900">
@@ -80,14 +168,14 @@
 </section>
 
 
-
+ -->
 
 
 
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-  <script src="ecom.js"></script>
+  <script src="contact.js"></script>
 
 </body>
 
