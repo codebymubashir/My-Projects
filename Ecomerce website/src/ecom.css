@@ -7,6 +7,10 @@ body{
   width: 100%;
   background: #F7F4EC;
   overflow-x: hidden;
+  /* padding-top: 80px; */
+}
+.navbar{
+  position: fixed;
 }
 
 .navbar h1{
@@ -94,6 +98,9 @@ body{
 .worksan{
   font-family: 'Work-sans',sans-serif;
   font-size: 12px;
+}
+.page2{
+  margin-top: 4rem;
 }
 .pg2div1{
   margin-left: 2rem;
