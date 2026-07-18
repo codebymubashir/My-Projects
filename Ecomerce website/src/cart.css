@@ -16,6 +16,16 @@
     font-family: sans-serif;
     font-style: italic;
 }
+.loginbtn{
+  width: 11vw;
+  height: 8vh;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-right: 33px;
+}
 .navlist{
   /* color: red; */
   font-size: 15px;
@@ -60,4 +70,30 @@
   display: flex;
   /* flex-direction: row; */
   gap: 20px;
+}
+.navlist {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navlist a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  padding-bottom: 4px;
+  display: inline-block;
+}
+
+.navlist a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #78350f;
+  transition: width 0.3s ease;
+}
+
+.navlist a:hover::after {
+  width: 100%;
 }

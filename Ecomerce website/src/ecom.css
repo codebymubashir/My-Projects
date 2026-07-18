@@ -4,20 +4,27 @@
     box-sizing: border-box;
 }
 body{
+  width: 100%;
   background: #F7F4EC;
+  overflow-x: hidden;
 }
-/* .nav{
-    width: 100%;
-    height: 14vh;
-    border: 2px solid black;
-    padding: 2rem;
-} */
+
 .navbar h1{
     font-weight: bold;
     margin-left: 22px;
     margin-top: 12px;
     font-family: sans-serif;
     font-style: italic;
+}
+.loginbtn{
+  width: 11vw;
+  height: 8vh;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-right: 33px;
 }
 .navlist{
   /* color: red; */
@@ -41,7 +48,7 @@ body{
   left: 0;
   height: 100%;
   width: 3px;
-  background-color: #78350f; /* amber-900 to match your theme, change if needed */
+  background-color: #78350f;
   transform-origin: 0 50%;
 }
 
@@ -90,4 +97,91 @@ body{
 }
 .pg2div1{
   margin-left: 2rem;
+}
+.page5{
+  margin-top: 5rem;
+  align-items: center;
+}
+.pg5div1{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 22px;
+  /* margin-top: 2rem; */
+  
+}
+.page3{
+  margin-top: 5rem;
+}
+.newsin{
+  padding: 12px;
+}
+.navlist {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navlist a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  padding-bottom: 4px;
+  display: inline-block;
+}
+
+.navlist a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #78350f;
+  transition: width 0.3s ease;
+}
+
+.navlist a:hover::after {
+  width: 100%;
+}
+.page6-wrapper {
+  margin: 100px auto;
+  width: 90%;
+  overflow: hidden; 
+}
+
+.page6ani {
+  display: flex;
+  gap: 4rem;
+  width: max-content;
+  animation: spin 20s linear infinite;
+}
+
+.page6card {
+  flex: 0 0 280px;
+  padding: 12px;
+  border: 3px solid black;
+  background: white;
+}
+
+@keyframes spin {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); } 
+}
+
+@media (max-width: 767px) {
+  .page6ani {
+    animation: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5rem;
+  }
+
+  /* .page6card {
+    flex: none;
+    width: 100%;
+  } */
+
+  /* duplicate wale cards mobile pe chupa dein, warna repeat dikhenge */
+  .page6card[aria-hidden="true"] {
+    display: none;
+  }
 }

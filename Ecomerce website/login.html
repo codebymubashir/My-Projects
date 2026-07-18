@@ -1,58 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="output.css">
-    <link rel="stylesheet" href="src/login.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.2.0/css/all.min.css"> -->
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login — Sign in</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="src/login.css">
 </head>
 <body>
-    <header>
-            <div class="navbar  flex flex-row justify-between items-center  w-full h-15 p-3 md:w-[1100px]">
-                <h1 class="ml11 text-2xl md:text-4xl font-bold">
-                 <span class="text-wrapper">
-                   <span class="line line1"></span>
-                   <a href="ecom.html"><span class="letters">TR<span class="italic">O</span>VE</span></a>
-                 </span>
-                </h1>
-                <ul id="navList" class=" navlist hidden md:flex flex-col md:flex-row gap-4 md:gap-7 absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent p-5 md:p-0 shadow-lg md:shadow-none font-family: 'Montserrat', sans-serif; ">
-                 <li><a href="ecom.html">HOME</a></li>
-                 <li><a href="product.html">PRODUCT</a></li>
-                 <li><a href="cart.html">CART</a></li>
-                 <li><a href="contact.html">CONTACT US</a></li>
-                </ul>
-                <div class="navsec">
-                  <button class=""><i class="fa-solid fa-moon " style="color: #78350f;"></i></button>
-              <button class="hidden md:flex border-1 border-black"><a href="/login.html">LOGIN/SIGN UP</a></button>
-                <button id="menuBtn" class="md:hidden ">
-                   <i class="fa-solid fa-bars text-2xl " style="color: #78350f;margin-right: 2rem;"></i>
-                </button>
 
-                </div>
-                <!-- <but
-              <!-- <button class="hidden md:flex border-1 border-black"><a href="/login.html">LOGIN/SIGN UP</a></button>
-                <button id="menuBtn" class="md:hidden ">
-                   <i class="fa-solid fa-bars text-2xl " style="color: #78350f;margin-right: 2rem;"></i>
-                </button> -->
+<div class="card-container">
+  <div class="track" id="track">
 
+    <!-- SLIDE 1: image left / login right -->
+    <div class="slide">
+      <div class="art-panel">
+        <svg class="threads" viewBox="0 0 460 560" preserveAspectRatio="none">
+          <g stroke="#d9a441" stroke-width="1" opacity="0.5">
+            <path d="M-20 60 C 120 20, 220 140, 480 90" fill="none"/>
+            <path d="M-20 160 C 140 120, 220 240, 480 190" fill="none"/>
+            <path d="M-20 340 C 140 300, 240 420, 480 360" fill="none"/>
+            <path d="M-20 470 C 140 430, 260 540, 480 480" fill="none"/>
+          </g>
+          <g stroke="#2f6f5e" stroke-width="1" opacity="0.5">
+            <path d="M-20 110 C 160 60, 200 200, 480 140" fill="none"/>
+            <path d="M-20 260 C 160 210, 220 330, 480 270" fill="none"/>
+            <path d="M-20 400 C 160 360, 220 480, 480 420" fill="none"/>
+          </g>
+        </svg>
+        <div>
+          <div class="eyebrow">Rangeen — Est. 2019</div>
+          <h1 class="brand">Woven for<br>everyday wear.</h1>
+          <p class="tagline">Handloom textiles and made-to-order fits, shipped from our studio floor to your door.</p>
+        </div>
+        <div class="swatches">
+          <div class="swatch" style="background:#d9a441;"></div>
+          <div class="swatch" style="background:#2f6f5e;"></div>
+          <div class="swatch" style="background:#7a2e2e;"></div>
+          <div class="swatch" style="background:#e7ded0;"></div>
+        </div>
+      </div>
 
-            </div>
-    </header>
+      <div class="form-panel">
+        <div class="kicker">Welcome back</div>
+        <h2>Sign in to your account</h2>
+        <p class="sub">Track orders, save favourites and check out faster.</p>
 
+        <form onsubmit="return false;">
+          <div class="field">
+            <input type="email" placeholder=" " required>
+            <label>Email address</label>
+          </div>
+          <div class="field">
+            <input type="password" placeholder=" " required>
+            <label>Password</label>
+          </div>
+          <div class="row-between">
+            <label class="checkbox-line"><input type="checkbox"> Remember me</label>
+            <a href="#">Forgot password?</a>
+          </div>
+          <button class="btn-primary" type="submit">Sign in</button>
+        </form>
 
+        <div class="switch-line">
+          New to Rangeen?
+          <button type="button" id="toSignup">Create an account</button>
+        </div>
+      </div>
+    </div>
 
+    <!-- SLIDE 2: signup left / image right -->
+    <div class="slide">
+      <div class="form-panel">
+        <div class="kicker">Join the studio</div>
+        <h2>Create your account</h2>
+        <p class="sub">A few details and you're in — takes under a minute.</p>
 
+        <form onsubmit="return false;">
+          <div class="field">
+            <input type="text" placeholder=" " required>
+            <label>Full name</label>
+          </div>
+          <div class="field">
+            <input type="email" placeholder=" " required>
+            <label>Email address</label>
+          </div>
+          <div class="field">
+            <input type="password" placeholder=" " required>
+            <label>Create password</label>
+          </div>
+          <div class="row-between">
+            <label class="checkbox-line"><input type="checkbox" required> I agree to the terms</label>
+          </div>
+          <button class="btn-primary" type="submit">Create account</button>
+        </form>
 
+        <div class="switch-line">
+          Already have an account?
+          <button type="button" id="toLogin">Sign in instead</button>
+        </div>
+      </div>
 
+      <div class="art-panel">
+        <svg class="threads" viewBox="0 0 460 560" preserveAspectRatio="none">
+          <g stroke="#d9a441" stroke-width="1" opacity="0.5">
+            <path d="M-20 90 C 140 40, 220 160, 480 110" fill="none"/>
+            <path d="M-20 220 C 140 180, 220 300, 480 240" fill="none"/>
+            <path d="M-20 380 C 140 340, 240 460, 480 400" fill="none"/>
+          </g>
+          <g stroke="#2f6f5e" stroke-width="1" opacity="0.5">
+            <path d="M-20 150 C 160 100, 200 240, 480 180" fill="none"/>
+            <path d="M-20 300 C 160 250, 220 370, 480 310" fill="none"/>
+            <path d="M-20 460 C 160 420, 220 540, 480 480" fill="none"/>
+          </g>
+        </svg>
+        <div>
+          <div class="eyebrow">Rangeen — Est. 2019</div>
+          <h1 class="brand">Made to be<br>worn in.</h1>
+          <p class="tagline">Create an account to save your sizes, wishlists and past orders in one place.</p>
+        </div>
+        <div class="swatches">
+          <div class="swatch" style="background:#7a2e2e;"></div>
+          <div class="swatch" style="background:#e7ded0;"></div>
+          <div class="swatch" style="background:#d9a441;"></div>
+          <div class="swatch" style="background:#2f6f5e;"></div>
+        </div>
+      </div>
+    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="ecom.js"></script>
-    
+  </div>
+</div>
+
+<script src="login.js"></script>
 </body>
 </html>

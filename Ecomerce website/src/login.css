@@ -1,63 +1,270 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/* .nav{
-    width: 100%;
-    height: 14vh;
-    border: 2px solid black;
-    padding: 2rem;
-} */
-.navbar h1{
-    font-weight: bold;
-    margin-left: 22px;
-    margin-top: 12px;
-    font-family: sans-serif;
-    font-style: italic;
-}
-.navlist{
-  /* color: red; */
-  font-size: 15px;
-}
-.ml11 {
-  position: relative;
+:root{
+  --ink:#1c1b1f;
+  --cream:#f7f2e9;
+  --indigo:#232c47;
+  --indigo-deep:#161c34;
+  --saffron:#d9a441;
+  --emerald:#2f6f5e;
+  --line: rgba(247,242,233,0.18);
+  --radius: 28px;
 }
 
-.ml11 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.1em;
-  padding-right: 0.05em;
-  padding-bottom: 0.15em;
+*{box-sizing:border-box;}
+html,body{height:100%;}
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:
+    radial-gradient(circle at 20% 20%, #2a3358 0%, transparent 45%),
+    radial-gradient(circle at 80% 80%, #1a2140 0%, transparent 50%),
+    var(--indigo-deep);
+  font-family:'Poppins', sans-serif;
+  color:var(--ink);
+  padding:24px;
 }
 
-.ml11 .line {
-  opacity: 0;
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 3px;
-  background-color: #78350f; /* amber-900 to match your theme, change if needed */
-  transform-origin: 0 50%;
+.card-container{
+  position:relative;
+  width:min(920px, 100%);
+  height:560px;
+  border-radius:var(--radius);
+  overflow:hidden;
+  box-shadow: 0 40px 80px -20px rgba(0,0,0,0.55), 0 0 0 1px rgba(247,242,233,0.06);
+  background:var(--cream);
 }
 
-.ml11 .line1 { 
-  top: 0; 
-  left: 0;
+.track{
+  display:flex;
+  width:200%;
+  height:100%;
+  transition: transform .75s cubic-bezier(.65,0,.28,1);
 }
 
-.ml11 .letter {
-  display: inline-block;
-  line-height: 1em;
+.slide{
+  width:50%;
+  height:100%;
+  display:flex;
 }
-.letters{
-  font-family: 'Fraunces', serif;
-  font-style: italic;
-  font-weight: 700;
+
+.track.signup-active{
+  transform: translateX(-50%);
 }
-.navsec{
-  display: flex;
-  /* flex-direction: row; */
-  gap: 20px;
+
+/* ---------- IMAGE PANEL ---------- */
+.art-panel{
+  width:50%;
+  height:100%;
+  position:relative;
+  background: linear-gradient(160deg, var(--indigo) 0%, var(--indigo-deep) 100%);
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  padding:44px 40px;
+}
+
+.art-panel svg.threads{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  opacity:.55;
+}
+
+.art-panel .eyebrow{
+  position:relative;
+  z-index:2;
+  font-size:12px;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  color:var(--saffron);
+  font-weight:500;
+}
+
+.art-panel .brand{
+  position:relative;
+  z-index:2;
+  font-family:'Playfair Display', serif;
+  font-weight:600;
+  font-size:44px;
+  line-height:1.05;
+  color:var(--cream);
+  margin:14px 0 0;
+}
+
+.art-panel .tagline{
+  position:relative;
+  z-index:2;
+  font-size:14.5px;
+  color:rgba(247,242,233,0.72);
+  max-width:280px;
+  line-height:1.6;
+  margin-top:16px;
+}
+
+.swatches{
+  position:relative;
+  z-index:2;
+  display:flex;
+  gap:10px;
+}
+.swatch{
+  width:34px;height:34px;border-radius:9px;
+  box-shadow: inset 0 0 0 1px rgba(247,242,233,0.25);
+}
+
+/* ---------- FORM PANEL ---------- */
+.form-panel{
+  width:50%;
+  height:100%;
+  background:var(--cream);
+  padding:56px 52px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.form-panel .kicker{
+  font-size:12px;
+  letter-spacing:.24em;
+  text-transform:uppercase;
+  color:var(--emerald);
+  font-weight:600;
+  margin-bottom:10px;
+}
+
+.form-panel h2{
+  font-family:'Playfair Display', serif;
+  font-size:30px;
+  font-weight:600;
+  margin:0 0 8px;
+}
+
+.form-panel p.sub{
+  font-size:13.5px;
+  color:#6b6a72;
+  margin:0 0 30px;
+}
+
+.field{
+  position:relative;
+  margin-bottom:20px;
+}
+
+.field input{
+  width:100%;
+  padding:15px 16px;
+  border-radius:12px;
+  border:1.5px solid #e3ddcd;
+  background:#fff;
+  font-family:'Poppins', sans-serif;
+  font-size:14px;
+  color:var(--ink);
+  outline:none;
+  transition:border-color .2s, box-shadow .2s;
+}
+
+.field input:focus{
+  border-color:var(--emerald);
+  box-shadow:0 0 0 4px rgba(47,111,94,0.12);
+}
+
+.field label{
+  position:absolute;
+  left:16px;
+  top:15px;
+  font-size:14px;
+  color:#8b8a91;
+  pointer-events:none;
+  transition:.18s ease;
+  background:#fff;
+  padding:0 4px;
+}
+
+.field input:focus + label,
+.field input:not(:placeholder-shown) + label{
+  top:-9px;
+  font-size:11px;
+  color:var(--emerald);
+  font-weight:500;
+}
+
+.row-between{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  font-size:12.5px;
+  color:#6b6a72;
+  margin:-6px 0 22px;
+}
+
+.row-between a{color:var(--emerald); text-decoration:none; font-weight:500;}
+
+.checkbox-line{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.checkbox-line input{width:14px;height:14px;accent-color:var(--emerald);}
+
+.btn-primary{
+  width:100%;
+  padding:15px;
+  border:none;
+  border-radius:12px;
+  background:var(--indigo);
+  color:var(--cream);
+  font-family:'Poppins', sans-serif;
+  font-size:14.5px;
+  font-weight:600;
+  letter-spacing:.02em;
+  cursor:pointer;
+  transition:transform .15s ease, background .2s ease;
+}
+
+.btn-primary:hover{background:var(--indigo-deep); transform:translateY(-1px);}
+.btn-primary:active{transform:translateY(0);}
+
+.switch-line{
+  text-align:center;
+  font-size:13px;
+  color:#6b6a72;
+  margin-top:22px;
+}
+
+.switch-line button{
+  background:none;
+  border:none;
+  font-family:'Poppins', sans-serif;
+  color:var(--saffron);
+  font-weight:600;
+  font-size:13px;
+  cursor:pointer;
+  padding:0;
+  margin-left:4px;
+}
+
+.switch-line button:hover{text-decoration:underline;}
+
+@media (max-width: 760px){
+  body{align-items:flex-start; padding:0;}
+  .card-container{
+    width:100%;
+    height:100vh;
+    border-radius:0;
+  }
+  .track{width:200%;}
+  .slide{flex-direction:column; width:50%;}
+  .art-panel, .form-panel{width:100%; height:auto;}
+  .art-panel{padding:30px 26px; min-height:220px;}
+  .art-panel .brand{font-size:32px;}
+  .form-panel{padding:34px 26px;}
+}
+
+@media (prefers-reduced-motion: reduce){
+  .track{transition:none;}
 }

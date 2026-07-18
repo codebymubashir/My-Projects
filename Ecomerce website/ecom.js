@@ -113,3 +113,51 @@ window.addEventListener('resize', () => {
     navList.classList.add('hidden');
   }
 });
+
+const emailInput = document.getElementById('newsinput');
+const joinbtn = document.getElementById('newsbtn');
+joinbtn.addEventListener('click',()=>{
+  const emailValue = emailInput.value.trim();
+
+  if (emailValue === '') {
+    alert('Please fill the input first');
+    return;
+  }
+
+  const popup = document.createElement('div');
+  popup.innerText = '🎉 Email submit karne ka shukriya!';
+  popup.style.cssText = `
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #78350f;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 9999;
+  `;
+  document.body.appendChild(popup);
+
+  setTimeout(() => {
+    popup.remove();
+  }, 3000);
+
+  emailInput.value = '';
+});
+
+
+// const emailInput = document.querySelector('.newsin');
+// const joinBtn = document.querySelector('.newsin').nextElementSibling; // JOIN button
+
+// joinBtn.addEventListener('click', () => {
+//   const emailValue = emailInput.value.trim();
+
+//   if (emailValue === '') {
+//     alert('Please fill the input first');
+//   } else {
+//     alert('Thanks for joining!!');
+//     emailInput.value = ''; 
+//   }
+// });
