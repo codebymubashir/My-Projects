@@ -3,12 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* .nav{
-    width: 100%;
-    height: 14vh;
-    border: 2px solid black;
-    padding: 2rem;
-} */
+
 .navbar h1{
     font-weight: bold;
     margin-left: 22px;
@@ -30,9 +25,25 @@
   /* color: red; */
   font-size: 15px;
 }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  background: white; /* zaroori hai warna transparent rahega */
+}
+.content{
+  padding-top: 100px;
+}
 .ml11 {
   position: relative;
 }
+.contform{
+  margin-top: 2rem;
+}
+
 
 .ml11 .text-wrapper {
   position: relative;
@@ -96,4 +107,9 @@
 
 .navlist a:hover::after {
   width: 100%;
+}
+
+.fruances{
+  font-family: 'Fraunces', serif;
+  
 }
