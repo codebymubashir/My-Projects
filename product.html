@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <input type="text" id="searchBox" placeholder="Search products..." onkeyup="searchProducts()" class="search-box">
+
+        <div class="filters">
+            <button onclick="filterProducts('All')" class="filter-btn">All</button>
+            <button onclick="filterProducts('Electronics')" class="filter-btn">Electronics</button>
+            <button onclick="filterProducts('Beauty')" class="filter-btn">Beauty</button>
+            <button onclick="filterProducts('Baby')" class="filter-btn">Baby</button>
+            <button onclick="filterProducts('Clothes-Men')" class="filter-btn">Men's Clothes</button>
+            <button onclick="filterProducts('Clothes-Women')" class="filter-btn">Women's Clothes</button>
+        </div>
+
+        <div id="products-container" class="products-grid"></div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const products = [
+  { id: 1, name: "Wireless Headphones", category: "Electronics", price: 2500, rating: 4.5, image: "headphones.jpg" },
+  { id: 2, name: "Bluetooth Speaker", category: "Electronics", price: 3200, rating: 4.3, image: "speaker.jpg" },
+  { id: 3, name: "Smart Watch", category: "Electronics", price: 5500, rating: 4.6, image: "smartwatch.jpg" },
+  { id: 4, name: "Power Bank 20000mAh", category: "Electronics", price: 1800, rating: 4.2, image: "powerbank.jpg" },
+  { id: 5, name: "Gaming Mouse", category: "Electronics", price: 1400, rating: 4.4, image: "gaming-mouse.jpg" },
+  { id: 6, name: "Mechanical Keyboard", category: "Electronics", price: 4200, rating: 4.5, image: "keyboard.jpg" },
+  { id: 7, name: "USB-C Fast Charger", category: "Electronics", price: 900, rating: 4.1, image: "charger.jpg" },
+  { id: 8, name: "LED Desk Lamp", category: "Electronics", price: 1300, rating: 4.0, image: "desk-lamp.jpg" },
+  { id: 9, name: "Portable SSD 1TB", category: "Electronics", price: 9500, rating: 4.7, image: "ssd.jpg" },
+  { id: 10, name: "Wireless Earbuds", category: "Electronics", price: 2800, rating: 4.3, image: "earbuds.jpg" },
+  { id: 11, name: "Action Camera 4K", category: "Electronics", price: 12500, rating: 4.6, image: "action-camera.jpg" },
+  { id: 12, name: "Smart Home Bulb", category: "Electronics", price: 700, rating: 3.9, image: "smart-bulb.jpg" },
+  { id: 13, name: "Laptop Cooling Pad", category: "Electronics", price: 1600, rating: 4.0, image: "cooling-pad.jpg" },
+  { id: 14, name: "Webcam 1080p", category: "Electronics", price: 2100, rating: 4.2, image: "webcam.jpg" },
+  { id: 15, name: "Router Dual Band", category: "Electronics", price: 3600, rating: 4.4, image: "router.jpg" },
+  { id: 16, name: "Portable Projector", category: "Electronics", price: 15000, rating: 4.5, image: "projector.jpg" },
+  { id: 17, name: "Noise Cancelling Headset", category: "Electronics", price: 6200, rating: 4.6, image: "headset.jpg" },
+  { id: 18, name: "Tablet Stand", category: "Electronics", price: 850, rating: 3.8, image: "tablet-stand.jpg" },
+  { id: 19, name: "Car Phone Mount", category: "Electronics", price: 650, rating: 4.0, image: "car-mount.jpg" },
+  { id: 20, name: "Electric Trimmer", category: "Electronics", price: 1900, rating: 4.1, image: "trimmer.jpg" },
+  { id: 21, name: "Lipstick Matte", category: "Beauty", price: 800, rating: 4.0, image: "lipstick.jpg" },
+  { id: 22, name: "Foundation Cream", category: "Beauty", price: 1200, rating: 4.2, image: "foundation.jpg" },
+  { id: 23, name: "Eyeliner Pen", category: "Beauty", price: 450, rating: 4.1, image: "eyeliner.jpg" },
+  { id: 24, name: "Perfume Bottle 100ml", category: "Beauty", price: 3500, rating: 4.5, image: "perfume.jpg" },
+  { id: 25, name: "Face Serum Vitamin C", category: "Beauty", price: 1600, rating: 4.4, image: "serum.jpg" },
+  { id: 26, name: "Sunglasses Aviator", category: "Fashion", price: 2200, rating: 4.3, image: "sunglasses.jpg" },
+  { id: 27, name: "Leather Handbag", category: "Fashion", price: 5200, rating: 4.6, image: "handbag.jpg" },
+  { id: 28, name: "Hair Straightener", category: "Beauty", price: 2800, rating: 4.2, image: "straightener.jpg" },
+  { id: 29, name: "Nail Polish Set", category: "Beauty", price: 600, rating: 3.9, image: "nail-polish.jpg" },
+  { id: 30, name: "Facial Cleanser", category: "Beauty", price: 750, rating: 4.1, image: "cleanser.jpg" },
+  { id: 31, name: "Bracelet Silver Chain", category: "Fashion", price: 1900, rating: 4.3, image: "bracelet.jpg" },
+  { id: 32, name: "Compact Powder", category: "Beauty", price: 900, rating: 4.0, image: "powder.jpg" },
+  { id: 33, name: "Wrist Watch Ladies", category: "Fashion", price: 4300, rating: 4.5, image: "ladies-watch.jpg" },
+  { id: 34, name: "Makeup Brush Set", category: "Beauty", price: 1100, rating: 4.2, image: "makeup-brush.jpg" },
+  { id: 35, name: "Hair Serum Argan Oil", category: "Beauty", price: 1350, rating: 4.4, image: "hair-serum.jpg" },
+  { id: 36, name: "Clutch Bag Party Wear", category: "Fashion", price: 2600, rating: 4.1, image: "clutch-bag.jpg" },
+  { id: 37, name: "Lip Gloss Shine", category: "Beauty", price: 550, rating: 3.8, image: "lip-gloss.jpg" },
+  { id: 38, name: "Earrings Pearl Studs", category: "Fashion", price: 1500, rating: 4.3, image: "earrings.jpg" },
+  { id: 39, name: "Face Mask Sheet Pack", category: "Beauty", price: 400, rating: 4.0, image: "face-mask.jpg" },
+  { id: 40, name: "Body Lotion Almond", category: "Beauty", price: 850, rating: 4.2, image: "body-lotion.jpg" },
+  { id: 41, name: "Baby Diapers Pack", category: "Baby", price: 1200, rating: 4.7, image: "diapers.jpg" },
+  { id: 42, name: "Baby Feeding Bottle", category: "Baby", price: 650, rating: 4.5, image: "feeding-bottle.jpg" },
+  { id: 43, name: "Baby Stroller", category: "Baby", price: 12500, rating: 4.6, image: "stroller.jpg" },
+  { id: 44, name: "Baby Carrier Wrap", category: "Baby", price: 2200, rating: 4.4, image: "baby-carrier.jpg" },
+  { id: 45, name: "Baby Shampoo Gentle", category: "Baby", price: 550, rating: 4.3, image: "baby-shampoo.jpg" },
+  { id: 46, name: "Baby Wipes Pack", category: "Baby", price: 400, rating: 4.6, image: "baby-wipes.jpg" },
+  { id: 47, name: "Baby Crib Wooden", category: "Baby", price: 18500, rating: 4.7, image: "baby-crib.jpg" },
+  { id: 48, name: "Baby Romper Cotton", category: "Baby", price: 900, rating: 4.2, image: "baby-romper.jpg" },
+  { id: 49, name: "Baby Pacifier Set", category: "Baby", price: 300, rating: 4.1, image: "pacifier.jpg" },
+  { id: 50, name: "Baby Monitor Camera", category: "Baby", price: 7200, rating: 4.5, image: "baby-monitor.jpg" },
+  { id: 51, name: "Baby Bath Tub", category: "Baby", price: 2100, rating: 4.3, image: "bath-tub.jpg" },
+  { id: 52, name: "Baby Powder Talc", category: "Baby", price: 350, rating: 4.0, image: "baby-powder.jpg" },
+  { id: 53, name: "Baby High Chair", category: "Baby", price: 9800, rating: 4.6, image: "high-chair.jpg" },
+  { id: 54, name: "Baby Rattle Toy", category: "Baby", price: 450, rating: 4.2, image: "rattle-toy.jpg" },
+  { id: 55, name: "Baby Blanket Soft", category: "Baby", price: 1350, rating: 4.4, image: "baby-blanket.jpg" },
+  { id: 56, name: "Baby Nasal Aspirator", category: "Baby", price: 500, rating: 4.1, image: "nasal-aspirator.jpg" },
+  { id: 57, name: "Baby Walker", category: "Baby", price: 6200, rating: 4.3, image: "baby-walker.jpg" },
+  { id: 58, name: "Baby Teether Set", category: "Baby", price: 400, rating: 4.2, image: "teether.jpg" },
+  { id: 59, name: "Baby Sleep Suit", category: "Baby", price: 1100, rating: 4.3, image: "sleep-suit.jpg" },
+  { id: 60, name: "Baby Nail Clipper Kit", category: "Baby", price: 380, rating: 4.0, image: "nail-clipper.jpg" },
+  { id: 61, name: "Men's Formal Shirt", category: "Clothes-Men", price: 1500, rating: 4.1, image: "shirt.jpg" },
+  { id: 62, name: "Women's Kurti Embroidered", category: "Clothes-Women", price: 1800, rating: 4.3, image: "kurti.jpg" },
+  { id: 63, name: "Men's Denim Jeans", category: "Clothes-Men", price: 2200, rating: 4.2, image: "mens-jeans.jpg" },
+  { id: 64, name: "Women's Lawn Suit 3-Piece", category: "Clothes-Women", price: 3200, rating: 4.4, image: "lawn-suit.jpg" },
+  { id: 65, name: "Men's Polo T-Shirt", category: "Clothes-Men", price: 1200, rating: 4.0, image: "polo-shirt.jpg" },
+  { id: 66, name: "Women's Abaya Black", category: "Clothes-Women", price: 2700, rating: 4.5, image: "abaya.jpg" },
+  { id: 67, name: "Men's Kurta Shalwar", category: "Clothes-Men", price: 2100, rating: 4.3, image: "mens-kurta.jpg" },
+  { id: 68, name: "Women's Saree Silk", category: "Clothes-Women", price: 4500, rating: 4.6, image: "saree.jpg" },
+  { id: 69, name: "Men's Winter Jacket", category: "Clothes-Men", price: 3800, rating: 4.4, image: "mens-jacket.jpg" },
+  { id: 70, name: "Women's Palazzo Pants", category: "Clothes-Women", price: 1400, rating: 4.1, image: "palazzo.jpg" },
+  { id: 71, name: "Men's Sweatshirt", category: "Clothes-Men", price: 1900, rating: 4.2, image: "sweatshirt.jpg" },
+  { id: 72, name: "Women's Maxi Dress", category: "Clothes-Women", price: 2900, rating: 4.3, image: "maxi-dress.jpg" },
+  { id: 73, name: "Men's Formal Trousers", category: "Clothes-Men", price: 2000, rating: 4.0, image: "trousers.jpg" },
+  { id: 74, name: "Women's Chiffon Dupatta", category: "Clothes-Women", price: 900, rating: 4.2, image: "dupatta.jpg" },
+  { id: 75, name: "Men's Waistcoat", category: "Clothes-Men", price: 2600, rating: 4.3, image: "waistcoat.jpg" },
+  { id: 76, name: "Women's Bridal Frock", category: "Clothes-Women", price: 8500, rating: 4.7, image: "bridal-frock.jpg" },
+  { id: 77, name: "Men's Casual Hoodie", category: "Clothes-Men", price: 2300, rating: 4.2, image: "hoodie.jpg" },
+  { id: 78, name: "Women's Pajama Set", category: "Clothes-Women", price: 1300, rating: 4.0, image: "pajama-set.jpg" },
+  { id: 79, name: "Men's Sherwani", category: "Clothes-Men", price: 9500, rating: 4.6, image: "sherwani.jpg" },
+  { id: 80, name: "Women's Gharara Set", category: "Clothes-Women", price: 6200, rating: 4.5, image: "gharara.jpg" },
+];
+
+
+
+function renderProducts(productList) {
+  const container = document.getElementById("products-container");
+  let html = "";
+  productList.forEach(function(product) {
+    html += createProductCard(product);
+  });
+  container.innerHTML = html;
+}
+
+// Pehli baar sab products dikhao
+renderProducts(products);
+
+
+
+
+function filterProducts(category) {
+  if (category === "All") {
+    renderProducts(products);
+  } else {
+    const filtered = products.filter(function(product) {
+      return product.category === category;
+    });
+    renderProducts(filtered);
+  }
+}
+function createProductCard(product) {
+  return `
+    <div class="product-card">
+      <div class="image-box">
+        <img src="${product.image}" alt="${product.name}">
+      </div>
+      <div class="card-body">
+        <h3 class="product-name">${product.name}</h3>
+        <p class="product-category">${product.category}</p>
+        <div class="price-rating">
+          <span class="price">Rs. ${product.price}</span>
+          <span class="rating">${product.rating} ⭐</span>
+        </div>
+        <button onclick="addToCart(${product.id})" class="add-btn">Add to Cart</button>
+      </div>
+    </div>
+  `;
+}
+function addToCart(productId) {
+  const product = products.find(p => p.id === productId);
+  alert(product.name + " cart mein add ho gaya!");
+}
+
+
+
+function searchProducts() {
+  const searchValue = document.getElementById("searchBox").value.toLowerCase();
+  const filtered = products.filter(function(product) {
+    return product.name.toLowerCase().includes(searchValue);
+  });
+  renderProducts(filtered);
+}
+
+    </script>
+</body>
+</html>
