@@ -35,9 +35,9 @@
         <li><a href="cart.html">CART</a></li>
         <li><a href="contact.html">CONTACT US</a></li>
       </ul>
-      <div class="navsec">
+      <div class="navsec ">
         <button class=""><i class="fa-solid fa-moon " style="color: #78350f;"></i></button>
-        <button class=" loginbtn hidden md:flex border-1"><a href="/login.html">LOGIN/SIGN UP</a></button>
+        <button class=" loginbtn  hidden md:block"><a href="/login.html">LOGIN/SIGN UP</a></button>
         <button id="menuBtn" class="md:hidden ">
           <i class="fa-solid fa-bars text-2xl " style="color: #78350f;margin-right: 2rem;"></i>
         </button>
@@ -51,12 +51,14 @@
 
   <!-- main starts here -->
 
-  <section class="max-w-[1240px] mx-auto md:relative md:top-20 md:left-8 grid md:grid-cols-2 gap-10 items-center px-8 py-16">
-    <div class="page1">
+  
+
+ <section class="page1sec w-full md:w-full  md:flex flex-row md:gap-9 md:justify-center ">
+    <div class="page1 md:h-140">
       <p class="monospace font-mono text-xs tracking-widest uppercase text-[#A6811A] mb-4">
         ——Curated Since Day One
       </p>
-      <h1 class="fruances text-5xl font-bold md:text-6xl leading-none mb-6">
+      <h1 class="fruances text-5xl font-bold md:text-7xl md:w-130 leading-none mb-6">
         A <span class="italic text-[#A6811A]">trove</span> of good things, found for you
       </h1>
       <p class="text-[#1B1B2F]/70 text-[14px] leading-relaxed max-w-md mb-8">
@@ -64,14 +66,31 @@
         no filler aisles. Just the good stuff.
       </p>
       <div class="flex gap-4">
-        <a href="product.html"><button class=" bg-[#1B1B2F] text-[#F7F4EC] px-8 py-4 w-36 h-14 font-semibold">Explore The Shop</button>
+        <a href="product.html"><button class=" bg-[#1B1B2F] text-[#F7F4EC] px-8 py-4 w-36 h-14 font-semibold">Explore The Shop
         </button></a>
           <button class="pg1btn hidden md:block bg-transparent border-3 border-black text-[black] px-8 py-4 font-semibold">Our
           Story</button>
       </div>
+      <div class="page2 flex flex-row gap-9 ">
+      <div class=" pg2div1 w-32 h-32 flex flex-col justify-center  ">
+        <p class="fruances text-3xl font-bold">1.2K+</p>
+        <p class="worksan">Pieces Curated</p>
+      </div>
+      <div class="w-32 h-32  flex flex-col justify-center  ">
+        <p class="fruances text-3xl font-bold">4.8/5</p>
+        <p class="worksan">Average Rating</p>
+      </div>
+      <div class="hidden md:block w-32 h-32 md:flex flex-col justify-center">
+        <p class="fruances text-3xl font-bold">3</p>
+        <p class="worksan">worlds trop</p>
+      </div>
+    </div>
+    </div>
+    <div class="page1pic hidden lg:block">
+        <!-- <img  src="https://i.pinimg.com/vwebp/736x/a5/83/c3/a583c395a9133f31190311989d79caa9.webp" alt=""> -->
     </div>
   </section>
-  <section>
+  <!-- <section>
     <div class="page2 flex flex-row gap-9 ">
       <div class=" pg2div1 w-32 h-32 flex flex-col justify-center  ">
         <p class="fruances text-3xl font-bold">1.2K+</p>
@@ -86,7 +105,7 @@
         <p class="worksan">worlds trop</p>
       </div>
     </div>
-  </section>
+  </section> -->
   <section>
     <div class="page3 flex flex-col gap-3 items-center text-center w-full h-66 py-16 px-8">
 
