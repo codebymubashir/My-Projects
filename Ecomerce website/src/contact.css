@@ -481,3 +481,8 @@
 .footercont{
   margin-top: 210px;
 }
+.contactdiv{
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}

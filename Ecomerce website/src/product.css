@@ -95,3 +95,10 @@
 .navlist a:hover::after {
   width: 100%;
 }
+.fruances{
+  font-family: 'Fraunces', serif;
+  
+}
+.monospace{
+  font-family: 'IBM Plex Mono' ,monospace;
+}

@@ -12,8 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.2.0/css/all.min.css"> -->
-  <title>Document</title>
+  <title>Product</title>
 </head>
 
 <body>
@@ -45,6 +44,26 @@
     </div>
   </header>
 
+  <main>
+    <section>
+      <div class="w-full h-56 md:w-full  bg-[#1B1B2F] border flex flex-col gap-2 justify-center items-center ">
+        <p class="monospace font-mono text-xs tracking-widest uppercase text-[#C9A227] mb-4"> ——The Full Trove</p>
+        <p class="fruances text-4xl md:text-5xl font-bold text-white">Shop Everything</p>
+        <div class=" flex flex-row gap-3">
+          <a class="text-white cursor-pointer" href="ecom.html">Home</a>
+          <p class="text-white">/</p>
+          <a class="text-white cursor-pointer" href="product.html">Shop</a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section>
+      <div id="products" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6"></div>
+    </section>
+  </main>
+
 
 
 
@@ -53,6 +72,72 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <script src="ecom.js"></script>
+  <script>
+
+fetch("https://api.escuelajs.co/api/v1/products")
+  .then(res => res.json())
+  .then(data => {
+
+    let data1 = document.getElementById("products")
+    data1.innerHTML = data.map((p) => {
+      // image URL ko clean karo (kabhi kabhi API se ["url"] format mein string aati hai)
+      let img = p.images[0]
+        .replace("[", "")
+        .replace("]", "")
+        .replace(/"/g, "")
+
+      return `
+        <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+          <img src="${img}" 
+               onerror="this.src='https://via.placeholder.com/300x200?text=No+Image'"
+               class="w-full h-48 object-cover">
+          <div class="p-4 flex flex-col flex-1">
+            <h3 class="text-base font-semibold mb-1">${p.title}</h3>
+            <p class="text-sm text-gray-500 mb-2">${p.description.slice(0, 60)}...</p>
+            <p class="text-lg font-bold mb-3">$${p.price}</p>
+            <div class="flex gap-2 mt-auto">
+              <button class="flex-1 border border-gray-800 py-2 rounded hover:bg-gray-100">View</button>
+              <button class="flex-1 bg-gray-900 text-white py-2 rounded hover:bg-gray-700">Add</button>
+            </div>
+          </div>
+        </div>
+      `
+    }).join("")
+
+  })
+    // fetch("https://api.escuelajs.co/api/v1/products")
+    //   .then(res => res.json())
+    //   .then(data => {
+
+
+    //     let data1 = document.getElementById("products")
+    //     data1.innerHTML = data.map((p) =>{
+    //       <div>
+    //         <img src="${p.image}">
+    //         <h1>${p.title}</h1>
+    //         <h1>${p.price}</h1>
+    //         <h1>${p.description}</h1>
+    //         </div>
+    //     }
+    //   })
+    // fetch("https://api.escuelajs.co/api/v1/products")
+    //   .then(res => res.json())
+    //   .then(data => {
+
+    //     let data1 = document.getElementById("products")
+    //     data1.innerHTML = data.map((p) => {
+    //       return `
+    //     <div>
+    //       <img src="${p.images[0]}">
+    //       <h1>${p.title}</h1>
+    //       <h1>${p.price}</h1>
+    //       <h1>${p.description}</h1>
+    //     </div>
+    //   `
+    //     }).join("")
+
+    //   })
+  </script>
 
 </body>
 
