@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="src/ecom.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.2.0/css/all.min.css"> -->
@@ -34,6 +34,7 @@
         <li><a href="product.html">PRODUCT</a></li>
         <li><a href="cart.html">CART</a></li>
         <li><a href="contact.html">CONTACT US</a></li>
+        <li class="md:hidden"><a href="login.html">Login/sign up</a></li>
       </ul>
       <div class="navsec ">
         <button class=""><i class="fa-solid fa-moon " style="color: #78350f;"></i></button>
@@ -50,8 +51,6 @@
   <!-- navbar ends here -->
 
   <!-- main starts here -->
-
-  
 
  <section class="page1sec w-full md:w-full  md:flex flex-row md:gap-9 md:justify-center ">
     <div class="page1 md:h-140">
@@ -87,25 +86,9 @@
     </div>
     </div>
     <div class="page1pic hidden lg:block">
-        <!-- <img  src="https://i.pinimg.com/vwebp/736x/a5/83/c3/a583c395a9133f31190311989d79caa9.webp" alt=""> -->
+        
     </div>
   </section>
-  <!-- <section>
-    <div class="page2 flex flex-row gap-9 ">
-      <div class=" pg2div1 w-32 h-32 flex flex-col justify-center  ">
-        <p class="fruances text-3xl font-bold">1.2K+</p>
-        <p class="worksan">Pieces Curated</p>
-      </div>
-      <div class="w-32 h-32  flex flex-col justify-center  ">
-        <p class="fruances text-3xl font-bold">4.8/5</p>
-        <p class="worksan">Average Rating</p>
-      </div>
-      <div class="hidden md:block w-32 h-32 md:flex flex-col justify-center">
-        <p class="fruances text-3xl font-bold">3</p>
-        <p class="worksan">worlds trop</p>
-      </div>
-    </div>
-  </section> -->
   <section>
     <div class="page3 flex flex-col gap-3 items-center text-center w-full h-66 py-16 px-8">
 
@@ -122,11 +105,46 @@
 
     </div>
   </section>
-  <section class="grid grid-cols-1 md:grid-cols-3 gap-1 bg-[#1B1B2F]">
+
+
+
+
+
+  <section class="w-full h-auto  justify-center items-center md:w-full md:h-auto flex flex-col gap-8 md:flex md:flex-row">
+    <div class="w-75 h-90 ">
+      <img class="w-full h-full" src="https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?w=800" alt="">
+      <div class="relative bottom-25 left-5">
+      <p class="text-[#A6811A] text-xl font-bold">—01</p>
+      <p class="fruances text-black font-bold text-3xl">Fashion</p>
+      <p class="font-jetbrains text-black text-base ">Jackets,denum,footwear</p>
+      </div>
+    </div>
+    <div class="w-75 h-90">
+      <img class="w-full h-full" src="https://images.unsplash.com/photo-1560343090-f0409e92791a?w=800&q=80" alt="Wooden toys" alt="">
+      <div class="relative bottom-25 left-5">
+      <p class="text-[#A6811A] text-xl font-bold">—02</p>
+      <p  class="fruances text-black font-bold text-3xl">Shoes</p>
+      <p class="font-jetbrains text-black text-base">Wooden plush and building sets</p>
+      </div>
+    </div>
+    <div class="w-75 h-90">
+      <img class="w-full h-full" src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800" alt="">
+      <div class="relative bottom-25 left-5">
+      <p  class="text-[#A6811A] text-xl font-bold">—03</p>
+      <p class="fruances text-black font-bold text-3xl">Accessories</p>
+      <p class="font-jetbrains text-black text-base">Watches,bags and finishes</p>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- <section class="grid grid-cols-1 md:grid-cols-3 gap-1 bg-[#1B1B2F]">
 
     <a href="product.html?category=fashion" class="group relative h-[520px] overflow-hidden block">
       <img src="https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?w=800"
-        class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        class="absolute inset-0 w-80 h-full object-cover group-hover:scale-105 transition duration-500">
       <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent"></div>
       <div class="absolute bottom-8 left-8 text-white">
         <p class="font-mono text-xs tracking-widest text-[#A6811A] flex items-center gap-2 mb-2">
@@ -163,16 +181,7 @@
       </div>
     </a>
 
-  </section>
-
-
-
-
-
-
-
-
-
+  </section> -->
   <section>
     <div class="page5 w-full h-80 md:h-42 grid grid-cols-2 md:flex flex-row justify-around bg-[#1B1B2F]">
       <div class="pg5div1 w-40 h-35">
@@ -198,7 +207,7 @@
     </div>
   </section>
   <section>
-    <div class="page3 flex flex-col gap-3 items-center text-center w-full h-96 md:h-60  py-16 px-8">
+    <div class="page3 flex flex-col gap-3 items-center text-center w-full h-520 md:h-160  py-16 px-8">
 
       <p class="monospace font-mono text-xs tracking-widest uppercase text-[#A6811A] mb-4 flex items-center gap-2">
         <span class="inline-block w-6 h-px bg-[#A6811A]"></span>
@@ -207,9 +216,13 @@
 
       <h2 class="fruances text-6xl font-semibold mb-4">Featured from the trove.</h2>
 
-      <p class="text-[#1B1B2F]/70 text-[19px] w-60 md:w-100 leading-relaxed max-w-md mx-auto mb-8">
+      <p class="text-[#1B1B2F]/70 text-[19px] w-80 md:w-100 leading-relaxed max-w-md mx-auto mb-8">
         A running shortlist of what's leaving the shelves fastest this month.
       </p>
+
+      <div id="cardContainer" class="flex flex-col md:flex md:flex-row gap-8">
+
+    </div>
 
     </div>
   </section>
@@ -222,12 +235,11 @@
           WORD OF MOUTH
         </p>
 
-        <h2 class="fruances text-3xl md:text-6xl font-semibold mb-4">What the trove-hunters say</h2>
+        <h2 class="fruances text-4xl md:text-6xl font-semibold mb-4">What the trove-hunters say</h2>
       </div>
-      <div class="page6-wrapper">
-        <div class="page6ani">
-          <!-- Set 1 -->
-          <div class="page6card">
+      <div class="page6-wrapper ">
+        <div class="page6ani justify-center items-center">
+          <div class="page6card w-70">
             <p class="text-7xl text-[#C9A287]">"</p>
             <p class="text-[18px] text-gray-500 w-65">Got the wooden trainset for my nephew — the finish quality is way
               above the price point. Will be back for more.</p>
@@ -236,7 +248,7 @@
               <p class="text-[11px]">Verified Buyer</p>
             </div>
           </div>
-          <div class="page6card">
+          <div class="page6card w-70">
             <p class="text-7xl text-[#C9A287]">"</p>
             <p class="text-[18px] text-gray-500 w-65">Ordered the leather jacket not expecting much and it's genuinely
               better in person. Packaging alone felt premium.</p>
@@ -245,7 +257,7 @@
               <p class="text-[11px]">Verified Buyer</p>
             </div>
           </div>
-          <div class="page6card">
+          <div class="page6card w-70">
             <p class="text-7xl text-[#C9A287]">"</p>
             <p class="text-[18px] text-gray-500 w-65">The tote bag has held up daily for four months now. This is my
               go-to store before I check anywhere else.</p>
@@ -254,8 +266,6 @@
               <p class="text-[11px]">Verified Buyer</p>
             </div>
           </div>
-
-          <!-- Set 2 - EXACT DUPLICATE (seamless loop ke liye zaroori) -->
           <div class="page6card" aria-hidden="true">
             <p class="text-7xl text-[#C9A287]">"</p>
             <p class="text-[18px] text-gray-500 w-65">Got the wooden trainset for my nephew — the finish quality is way
@@ -292,9 +302,9 @@
 
   <section class="secnews">
     <div
-      class="newsdiv bg-[#C9A227] justify-center gap-7 text-center items-center w-full h-76 flex flex-col md:flex md:flex-row md:h-50">
+      class="newsdiv bg-[#C9A227] justify-center gap-7 text-center items-center w-full h-76 flex flex-col md:flex md:flex-row md:h-50 md:justify-around">
       <div>
-        <h3 class="fruances text-4xl font-bold w-70 leading-none mb-6 md:text-xl">Get first pic of new arrivals.</h3>
+        <h3 class="fruances text-4xl font-bold w-70  mb-6 md:w-150  md:text-3xl">Get first pic of new arrivals.</h3>
       </div>
       <div class="flex flex-col md:flex md:flex-row">
         <input id="newsinput" class=" newsin w-70 h-10 md:w-82 h-15 bg-white border-1" type="text"
