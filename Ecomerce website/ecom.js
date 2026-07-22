@@ -147,21 +147,6 @@ joinbtn.addEventListener('click',()=>{
 });
 
 
-// const emailInput = document.querySelector('.newsin');
-// const joinBtn = document.querySelector('.newsin').nextElementSibling; // JOIN button
-
-// joinBtn.addEventListener('click', () => {
-//   const emailValue = emailInput.value.trim();
-
-//   if (emailValue === '') {
-//     alert('Please fill the input first');
-//   } else {
-//     alert('Thanks for joining!!');
-//     emailInput.value = ''; 
-//   }
-// });
-
-
 const products = [
             {
                 image: "https://images.unsplash.com/photo-1558121556-2a39fc528338?q=80&w=800&auto=format&fit=crop",

@@ -102,3 +102,24 @@
 .monospace{
   font-family: 'IBM Plex Mono' ,monospace;
 }
+.products{
+  padding: 1rem;
+}
+/* .mainjs{
+  margin-left: 2rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.btnjs{
+  margin-bottom: 12px;
+}
+.titlejs{
+  margin-left: 0.5;
+  margin-top: 1rem;
+}
+.pricejs{
+  margin-left: 0rem;
+  color: #C9A227;
+  font-weight: bold;
+
+} */
