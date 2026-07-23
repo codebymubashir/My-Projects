@@ -224,6 +224,49 @@ body{
   100% { opacity: 1; transform: translateY(0); }
 }
 
+/* .daydisplay{
+  position: relative;
+  left: 3rem;
+} */
+ /* .daydisplay{
+  padding: 0.5rem;
+  animation: fadedown 0.9s backwards;
+ }
+ @keyframes fadedown{
+  0%{
+    transform: translateY(-50px);
+  }
+  50%{
+    transform: translateY(-8px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+ } */
+
+ .daydisplay {
+  padding: 0.5rem;
+  animation: fadeUpDown 3s ease-in-out forwards;
+}
+
+@keyframes fadeUpDown {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  15% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+}
 
 .dark .pagedark{
   background-color: #14141F;

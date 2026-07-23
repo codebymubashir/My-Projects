@@ -30,6 +30,7 @@
         <li><a href="ecom.html">HOME</a></li>
         <li><a href="product.html">PRODUCT</a></li>
         <li><a href="contact.html">CONTACT US</a></li>
+        <li class="md:hidden"><a href="login.html">Login/sign up</a></li>
       </ul>
       <div class="navsec">
         <button id="darkActivator" class="cursor-pointer"><i class="fa-solid fa-moon " style="color: #78350f;"></i></button>
@@ -102,19 +103,19 @@
         </div>
 
         <div class="field-group">
-          <input class="pagetext peer" type="email" id="email" placeholder=" ">
+          <input  class="pagetext peer" type="email" id="email" placeholder=" ">
           <label for="email" class="floating-label"><i class="fa-solid fa-envelope"></i> Your email</label>
           <p class="error-msg"><i class="fa-solid fa-circle-exclamation"></i> Required — we need a way to reply</p>
         </div>
 
-        <div class="field-group">
-          <textarea class="pagetext peer" id="message" rows="4" placeholder=" "></textarea>
+        <div id="message" class="field-group">
+          <textarea  class="pagetext peer" id="message" rows="4" placeholder=" "></textarea>
           <label for="message" class="floating-label"><i class="fa-solid fa-message"></i> Message</label>
           <p class="error-msg"><i class="fa-solid fa-circle-exclamation"></i> Required — let us know what's on your mind
           </p>
         </div>
 
-        <button type="submit" class="submit-btn">
+        <button id="btnsubmits" type="submit" class="submit-btn">
           <span>Send message</span>
           <i class="fa-solid fa-arrow-right"></i>
         </button>

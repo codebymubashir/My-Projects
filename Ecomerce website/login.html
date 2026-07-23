@@ -49,18 +49,18 @@
 
         <form onsubmit="return false;">
           <div class="field">
-            <input type="email" placeholder=" " required>
+            <input id="Email" type="email" placeholder=" " required>
             <label>Email address</label>
           </div>
           <div class="field">
-            <input type="password" placeholder=" " required>
+            <input id="Password" type="password" placeholder=" " required>
             <label>Password</label>
           </div>
           <div class="row-between">
-            <label class="checkbox-line"><input type="checkbox"> Remember me</label>
+            <label class="checkbox-line"><input id="remember" type="checkbox"> Remember me</label>
             <a href="#">Forgot password?</a>
           </div>
-          <button class="btn-primary" type="submit">Sign in</button>
+          <button id="btnsubmit" class="btn-primary" type="submit">Sign in</button>
         </form>
 
         <div class="switch-line">
@@ -77,23 +77,23 @@
         <h2>Create your account</h2>
         <p class="sub">A few details and you're in — takes under a minute.</p>
 
-        <form onsubmit="return false;">
+        <form id="registerform" onsubmit="return false;">
           <div class="field">
-            <input type="text" placeholder=" " required>
+            <input id="fullname" type="text" placeholder=" " required>
             <label>Full name</label>
           </div>
           <div class="field">
-            <input type="email" placeholder=" " required>
+            <input id="emailaddress" type="email" placeholder=" " required>
             <label>Email address</label>
           </div>
           <div class="field">
-            <input type="password" placeholder=" " required>
+            <input id="passwords" type="password" placeholder=" " required>
             <label>Create password</label>
           </div>
           <div class="row-between">
-            <label class="checkbox-line"><input type="checkbox" required> I agree to the terms</label>
+            <label class="checkbox-line"><input id="agree" type="checkbox" required> I agree to the terms</label>
           </div>
-          <button class="btn-primary" type="submit">Create account</button>
+          <button id="btnsubmited" class="btn-primary" type="submit">Create account</button>
         </form>
 
         <div class="switch-line">

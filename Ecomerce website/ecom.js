@@ -223,3 +223,36 @@ const html = document.getElementById("dark");
  
 darkActivator.addEventListener("click", () => {
   html.classList.toggle("dark");});
+
+
+
+  let today = new Date().getDay(); // 0-6
+    let dayName;
+
+    switch (today) {
+      case 0:
+        dayName = "Sunday";
+        break;
+      case 1:
+        dayName = "Monday";
+        break;
+      case 2:
+        dayName = "Tuesday";
+        break;
+      case 3:
+        dayName = "Wednesday";
+        break;
+      case 4:
+        dayName = "Thursday";
+        break;
+      case 5:
+        dayName = "Friday";
+        break;
+      case 6:
+        dayName = "Saturday";
+        break;
+      default:
+        dayName = "Unknown";
+    }
+
+    document.getElementById("dayDisplay").innerText = "Welcome! Today is " + dayName;

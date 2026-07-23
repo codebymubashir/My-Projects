@@ -129,3 +129,25 @@ const html = document.getElementById("dark");
  
 darkActivator.addEventListener("click", () => {
   html.classList.toggle("dark");});
+
+
+
+  let contactForm = document.querySelector("#btnsubmits");
+
+contactForm.addEventListener("click", () => {
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let message = document.getElementById("message").value;
+
+  let newUser = {
+    name: name,
+    email: email,
+    message: message
+  };
+
+  let users = JSON.parse(localStorage.getItem("users")) || [];
+  users.push(newUser);
+  localStorage.setItem("users", JSON.stringify(users));
+
+  alert("Message sent successfully!");
+});
