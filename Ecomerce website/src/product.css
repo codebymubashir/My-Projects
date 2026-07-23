@@ -123,3 +123,35 @@
   font-weight: bold;
 
 } */
+
+.page1sec {
+  width: 100%;
+  /* height: 100vh; */
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeUp 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.fadeupproducts{
+  width: 100%;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeUp 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+.fadeupbtn{
+  width: 100%;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeUp 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes fadeUp {
+  0%   { opacity: 0; transform: translateY(50px); }
+  70%  { opacity: 1; transform: translateY(-8px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.productlabel{
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+}
