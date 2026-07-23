@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -16,25 +16,24 @@
   <title>Document</title>
 </head>
 
-<body class="bg-[#f5f0e8] font-body overflow-x-hidden">
+<body class="pagedark bg-[#f5f0e8] font-body overflow-x-hidden">
   <header>
-    <div class="navbar  flex flex-row justify-between items-center  w-full h-15 p-3 md:w-full">
-      <h1 class="ml11 text-2xl md:text-4xl font-bold">
+    <div class="pagedark navbar  flex flex-row justify-between items-center  w-full h-15 p-3 md:w-full">
+      <h1 class="pagetext ml11 text-2xl md:text-4xl font-bold">
         <span class="text-wrapper">
           <span class="line line1"></span>
           <a href="ecom.html"><span class="letters">TR<span class="italic">O</span>VE</span></a>
         </span>
       </h1>
       <ul id="navList"
-        class="navlist hidden md:flex flex-col md:font-bold md:flex-row gap-4 md:gap-7 absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent p-5 md:p-0 shadow-lg md:shadow-none">
+        class="pagetext navlist hidden md:flex flex-col md:font-bold md:flex-row gap-4 md:gap-7 absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent p-5 md:p-0 shadow-lg md:shadow-none">
         <li><a href="ecom.html">HOME</a></li>
         <li><a href="product.html">PRODUCT</a></li>
-        <li><a href="cart.html">CART</a></li>
         <li><a href="contact.html">CONTACT US</a></li>
       </ul>
       <div class="navsec">
-        <button class=""><i class="fa-solid fa-moon " style="color: #78350f;"></i></button>
-        <button class="loginbtn hidden md:flex border-1 border-black"><a href="/login.html">LOGIN/SIGN UP</a></button>
+        <button id="darkActivator" class="cursor-pointer"><i class="fa-solid fa-moon " style="color: #78350f;"></i></button>
+        <button class="pagebtn loginbtn hidden md:flex border-1 border-black"><a href="/login.html">LOGIN/SIGN UP</a></button>
         <button id="menuBtn" class="md:hidden ">
           <i class="fa-solid fa-bars text-2xl " style="color: #78350f;margin-right: 2rem;"></i>
         </button>
@@ -43,7 +42,7 @@
 
     </div>
   </header>
-  <section class="contact-wrap relative top-22 py-24 px-6 md:px-16 overflow-hidden">
+  <section class="pagedark contact-wrap relative top-22 py-24 px-6 md:px-16 overflow-hidden">
 
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
@@ -51,39 +50,39 @@
 
     <div class="relative z-10 text-center mb-16 reveal">
       <p class="eyebrow">— LET'S TALK —</p>
-      <h2 class="font-heading font-bold text-gray-900 text-5xl md:text-7xl mb-5 title-underline">Say hello</h2>
-      <p class="hidden md:hidden text-gray-500 max-w-lg mx-auto text-sm md:text-base md:text-center">Whatever's on your mind — a question, an idea, or
+      <h2 class="pagetext font-heading font-bold text-gray-900 text-5xl md:text-7xl mb-5 title-underline">Say hello</h2>
+      <p class="pagepara hidden md:hidden text-gray-500 max-w-lg mx-auto text-sm md:text-base md:text-center">Whatever's on your mind — a question, an idea, or
         just a hello — drop it below. A real human reads every message.</p>
     </div>
 
     <div class="contactdiv relative  z-10 w-70 md:w-290 md:justify-center md:items-center grid md:grid-cols-5 gap-8">
 
       <div class="md:col-span-2 flex flex-col gap-4">
-        <div class="info-card reveal reveal-1">
+        <div class="pagedark pagebtn info-card reveal reveal-1">
           <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
           <div>
-            <p class="info-label">Email us</p>
-            <p class="info-value">hello@trove.com</p>
+            <p class="pagetext info-label">Email us</p>
+            <p class="pagepara info-value">hello@trove.com</p>
           </div>
         </div>
 
-        <div class="info-card reveal reveal-2">
+        <div class="pagedark pagebtn info-card reveal reveal-2">
           <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
           <div>
-            <p class="info-label">Call us</p>
-            <p class="info-value">+92 300 1234567</p>
+            <p class="pagetext info-label">Call us</p>
+            <p class="pagepara info-value">+92 300 1234567</p>
           </div>
         </div>
 
-        <div class="info-card reveal reveal-3">
+        <div class="pagedark pagebtn info-card reveal reveal-3">
           <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
           <div>
-            <p class="info-label">Visit us</p>
-            <p class="info-value">Bahawalpur, Punjab, PK</p>
+            <p class="pagetext info-label">Visit us</p>
+            <p class="pagepara info-value">Bahawalpur, Punjab, PK</p>
           </div>
         </div>
 
-        <div class="dark-panel reveal reveal-4">
+        <div class="pagebtn dark-panel reveal reveal-4">
           <i class="fa-solid fa-quote-left quote-icon"></i>
           <p class="dark-panel-text">Real replies from a real team — never a bot, never a form left unread.</p>
           <div class="socials">
@@ -94,22 +93,22 @@
         </div>
       </div>
 
-      <form id="contactForm" class="md:col-span-3 form-card reveal reveal-2" novalidate>
+      <form id="contactForm" class="pagedark pagebtn md:col-span-3 form-card reveal reveal-2" novalidate>
 
         <div class="field-group">
-          <input class="peer" type="text" id="name" placeholder=" ">
+          <input class="pagetext peer" type="text" id="name" placeholder=" ">
           <label for="name" class="floating-label"><i class="fa-solid fa-user"></i> Your name</label>
           <p class="error-msg"><i class="fa-solid fa-circle-exclamation"></i> Required — please tell us your name</p>
         </div>
 
         <div class="field-group">
-          <input class="peer" type="email" id="email" placeholder=" ">
+          <input class="pagetext peer" type="email" id="email" placeholder=" ">
           <label for="email" class="floating-label"><i class="fa-solid fa-envelope"></i> Your email</label>
           <p class="error-msg"><i class="fa-solid fa-circle-exclamation"></i> Required — we need a way to reply</p>
         </div>
 
         <div class="field-group">
-          <textarea class="peer" id="message" rows="4" placeholder=" "></textarea>
+          <textarea class="pagetext peer" id="message" rows="4" placeholder=" "></textarea>
           <label for="message" class="floating-label"><i class="fa-solid fa-message"></i> Message</label>
           <p class="error-msg"><i class="fa-solid fa-circle-exclamation"></i> Required — let us know what's on your mind
           </p>

@@ -486,3 +486,17 @@
   align-items: center;
   margin-left: 20px;
 }
+.dark .pagedark{
+  background-color: #14141F;
+}
+.dark .pagetext{
+  color: #F1EEE4;
+}
+.dark .pagebtn{
+  color: #F1EEE4;
+  border: 2px solid #F1EEE4;
+
+}
+.dark .pagepara{
+  color: #F1EEE4B8;
+}

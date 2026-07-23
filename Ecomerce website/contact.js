@@ -121,3 +121,11 @@ const observer = new IntersectionObserver((entries) => {
  
 revealEls.forEach((el) => observer.observe(el));
 
+
+
+
+const darkActivator = document.getElementById("darkActivator");
+const html = document.getElementById("dark");
+ 
+darkActivator.addEventListener("click", () => {
+  html.classList.toggle("dark");});

@@ -155,3 +155,17 @@
   margin-top: 1.5rem;
   margin-left: 1rem;
 }
+.dark .pagedark{
+  background-color: #14141F;
+}
+.dark .pagetext{
+  color: #F1EEE4;
+}
+.dark .pagebtn{
+  color: #F1EEE4;
+  border: 2px solid #F1EEE4;
+
+}
+.dark .pagepara{
+  color: #F1EEE4B8;
+}
