@@ -15,7 +15,8 @@ document.getElementById('toLogin').addEventListener('click', () => {
 
 let registorForm = document.querySelector("#btnsubmited");
 
-registorForm.addEventListener("click", () => {
+registorForm.addEventListener("click", (e) => {
+   e.preventDefault();
   let username = document.getElementById("fullname").value;
   let email = document.getElementById("emailaddress").value;
   let password = document.getElementById("passwords").value;
