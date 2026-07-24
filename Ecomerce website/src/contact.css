@@ -486,6 +486,9 @@
   align-items: center;
   margin-left: 20px;
 }
+.contactform{
+  margin-left: 2rem;
+}
 .dark .pagedark{
   background-color: #14141F;
 }

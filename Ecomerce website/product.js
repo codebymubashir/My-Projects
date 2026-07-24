@@ -41,13 +41,13 @@ anime.timeline({ loop: false })
 
 
 
-const menuBtn = document.getElementById('menuBtn');
-const navList = document.getElementById('navList');
+// const menuBtn = document.getElementById('menuBtn');
+// const navList = document.getElementById('navList');
 
-menuBtn.addEventListener('click', () => {
-    navList.classList.toggle('hidden');
-    navList.classList.toggle('flex');
-});
+// menuBtn.addEventListener('click', () => {
+//     navList.classList.toggle('hidden');
+//     navList.classList.toggle('flex');
+// });
 
 
 const products = [
@@ -267,7 +267,7 @@ electronics.addEventListener("click", () => {
 beauty.addEventListener("click", () => {
     getproducts("BEAUTY")
 })
-accessories.addEventListener("click", () => {
+ACCESSORY.addEventListener("click", () => {
     getproducts("ACCESSORY")
 })
 all.addEventListener("click", () => {
@@ -280,3 +280,17 @@ const html = document.getElementById("dark");
  
 darkActivator.addEventListener("click", () => {
   html.classList.toggle("dark");});
+
+
+
+
+  const menuBtn = document.getElementById('menuBtn');
+const navList = document.getElementById('navList');
+
+console.log('menuBtn found:', menuBtn); // ye add karein
+
+menuBtn.addEventListener('click', () => {
+    console.log('Button clicked!'); // ye bhi add karein
+    navList.classList.toggle('hidden');
+    navList.classList.toggle('flex');
+});

@@ -151,6 +151,14 @@
   100% { opacity: 1; transform: translateY(0); }
 }
 
+.navbar {
+  position: relative;
+  z-index: 50;
+}
+
+#navList {
+  z-index: 50;
+}
 .productlabel{
   margin-top: 1.5rem;
   margin-left: 1rem;
