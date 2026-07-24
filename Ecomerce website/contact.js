@@ -132,22 +132,52 @@ darkActivator.addEventListener("click", () => {
 
 
 
-  let contactForm = document.querySelector("#btnsubmits");
+//   let contactForm = document.querySelector("#btnsubmits");
+
+// contactForm.addEventListener("click", () => {
+//   let name = document.getElementById("name").value;
+//   let email = document.getElementById("email").value;
+//   let message = document.getElementById("message").value;
+
+//   let newUser = {
+//     name: name,
+//     email: email,
+//     message: message
+//   };
+
+//   let users = JSON.parse(localStorage.getItem("users")) || [];
+//   users.push(newUser);
+//   localStorage.setItem("users", JSON.stringify(users));
+
+//   alert("Message sent successfully!");
+// });
+
+let contactForm = document.querySelector("#btnsubmits");
 
 contactForm.addEventListener("click", () => {
-  let name = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
-  let message = document.getElementById("message").value;
+  let name = document.getElementById("name").value.trim();
+  let email = document.getElementById("email").value.trim();
+  let message = document.getElementById("message").value.trim();
 
-  let newUser = {
+
+  if (name === "" || email === "" || message === "") {
+    alert("Please fill in all fields!");
+    return;
+  }else if (!email.toLowerCase().endsWith("@gmail.com")) {
+    alert("Email must be a valid @gmail.com address!");
+    return;
+  }
+
+  let newMessage = {
     name: name,
     email: email,
     message: message
   };
 
-  let users = JSON.parse(localStorage.getItem("users")) || [];
-  users.push(newUser);
-  localStorage.setItem("users", JSON.stringify(users));
+  let messages = JSON.parse(localStorage.getItem("contactMessages")) || [];
+  messages.push(newMessage);
+  localStorage.setItem("contactMessages", JSON.stringify(messages));
 
   alert("Message sent successfully!");
+  location.reload();
 });

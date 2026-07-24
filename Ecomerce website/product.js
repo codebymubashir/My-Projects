@@ -194,7 +194,7 @@ function createProductCard(product) {
                         <p class="text-[#131114] jetBrains">${product.price}</p>
                     </div>
                     <div class="border-1 border-[rgba(19,17,20,0.14)] h-12 flex flex-row jetBrains text-sm">
-                        <div class="w-[50%] bg-[#FFFFFF] text-[131114] flex justify-center items-center"><button>View</button></div>
+                        <div class="w-[50%] bg-[#FFFFFF]  flex justify-center items-center"><button>View</button></div>
                         <div class="w-[50%] text-[#FFFFFF] bg-[#131114] flex justify-center items-center"><button>Add</button></div>
                     </div>
                 </div>
@@ -228,7 +228,7 @@ function Showallproducts(params) {
                         <p class="pagetext text-[#131114] jetBrains">${product.price}</p>
                     </div>
                     <div class="border-1 border-[rgba(19,17,20,0.14)] h-12 flex flex-row jetBrains text-sm">
-                        <div class="w-[50%] bg-[#FFFFFF] text-[131114] flex justify-center items-center"><button>View</button></div>
+                        <div class="w-[50%] bg-[#FFFFFF] flex justify-center items-center"><button>View</button></div>
                         <div class="pagebtn w-[50%] text-[#FFFFFF] bg-[#131114] flex justify-center items-center"><button>Add</button></div>
                     </div>
                 </div>
@@ -250,7 +250,7 @@ function getproducts(categorye) {
                         <p class="pagetext text-[#131114] jetBrains">${product.price}</p>
                     </div>
                     <div class="border-1 border-[rgba(19,17,20,0.14)] h-12 flex flex-row jetBrains text-sm">
-                        <div class="w-[50%] bg-[#FFFFFF] text-[131114] flex justify-center items-center"><button>View</button></div>
+                        <div class="w-[50%] bg-[#FFFFFF] flex justify-center items-center"><button>View</button></div>
                         <div class="pagebtn w-[50%] text-[#FFFFFF] bg-[#131114] flex justify-center items-center"><button>Add</button></div>
                     </div>
                 </div>

@@ -94,7 +94,7 @@
         </div>
       </div>
 
-      <form id="contactForm" class="pagedark pagebtn contactform md:col-span-3 form-card reveal reveal-2" novalidate>
+      <form  id="contactForm" onsubmit="return false" class="pagedark pagebtn contactform md:col-span-3 form-card reveal reveal-2" novalidate>
 
         <div class="field-group">
           <input class="pagetext peer" type="text" id="name" placeholder=" ">
@@ -108,18 +108,19 @@
           <p class="error-msg"><i class="fa-solid fa-circle-exclamation"></i> Required — we need a way to reply</p>
         </div>
 
-        <div id="message" class="field-group">
+        <div id="message-group" class="field-group">
           <textarea  class="pagetext peer" id="message" rows="4" placeholder=" "></textarea>
           <label for="message" class="floating-label"><i class="fa-solid fa-message"></i> Message</label>
           <p class="error-msg"><i class="fa-solid fa-circle-exclamation"></i> Required — let us know what's on your mind
           </p>
         </div>
 
-        <button id="btnsubmits" type="submit" class="submit-btn">
+        <button id="btnsubmits" type="button" class="submit-btn">
           <span>Send message</span>
           <i class="fa-solid fa-arrow-right"></i>
         </button>
       </form>
+      
 
     </div>
   </section>
